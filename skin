@@ -1,1 +1,610 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<title>ЕГЭ Физика 2024</title>
+</head>
+<body bgcolor="#e6f0fa" text="#1e3c5c" link="white" vlink="white">
 
+<center>
+<table width="900" bgcolor="white" cellpadding="20" border="0" cellspacing="0">
+<tr><td>
+
+<center>
+<h1>ЕГЭ ФИЗИКА 2024 - ТРЕНАЖЕР</h1>
+</center>
+
+<hr>
+
+<table width="100%" bgcolor="#2c3e50" cellpadding="10">
+<tr>
+<td>
+<font color="white">
+<b>
+<a href="index.html" style="color:white">ГЛАВНАЯ</a> | 
+<a href="kurs.html" style="color:white">КУРСЫ</a> | 
+<a href="ege2024.html" style="color:white">ЕГЭ 2024</a>
+</b>
+</font>
+</td>
+</tr>
+</table>
+
+<hr>
+
+<center>
+<table width="100%" bgcolor="#1e3c5c" cellpadding="10">
+<tr><td>
+<font color="white">
+<b>СТРУКТУРА ЕГЭ 2024:</b> Часть 1 (1-20) - 28 баллов | Часть 2 (21-26) - 52 балла | ВСЕГО: 100 баллов
+</font>
+</td></tr>
+</table>
+</center>
+
+<br>
+
+<center>
+<table width="100%" bgcolor="#ffd966" cellpadding="10">
+<tr><td align="center">
+<font size="5" color="#1e3c5c"><b id="totalScore">ИТОГО: 0 / 100 баллов</b></font>
+</td></tr>
+</table>
+</center>
+
+<hr>
+
+<!-- ЧАСТЬ 1 -->
+<center><h2>ЧАСТЬ 1. КРАТКИЕ ОТВЕТЫ (1-20) - 28 БАЛЛОВ</h2></center>
+
+<!-- ЗАДАНИЕ 1 -->
+<table width="100%" bgcolor="white" cellpadding="15" border="1" bordercolor="#1e3c5c">
+<tr><td>
+<b>ЗАДАНИЕ 1 (1 балл)</b>
+<p>Тело движется равномерно. За 10 секунд прошло 50 метров. Чему равна скорость? (м/с)</p>
+
+<table width="100%">
+<tr>
+<td width="70%"><input type="text" id="ans1" size="20" placeholder="Введите ответ..."></td>
+<td><button onclick="check1()">Проверить</button></td>
+</tr>
+</table>
+
+<div id="res1" style="display:none; padding:10px; margin-top:10px; background:#f0f8ff;"></div>
+<div id="sol1" style="display:none; padding:10px; margin-top:10px; background:#fff3cd;">
+<b>Решение:</b> v = s/t = 50/10 = 5 м/с<br>
+<b>Ответ: 5</b>
+</div>
+</td></tr>
+</table>
+
+<br>
+
+<!-- ЗАДАНИЕ 2 -->
+<table width="100%" bgcolor="white" cellpadding="15" border="1" bordercolor="#1e3c5c">
+<tr><td>
+<b>ЗАДАНИЕ 2 (1 балл)</b>
+<p>Тело массой 2 кг движется с ускорением 3 м/с². Чему равна равнодействующая сила? (Н)</p>
+
+<table>
+<tr><td><input type="text" id="ans2" size="20" placeholder="Введите ответ..."></td>
+<td><button onclick="check2()">Проверить</button></td></tr>
+</table>
+
+<div id="res2" style="display:none; padding:10px; margin-top:10px; background:#f0f8ff;"></div>
+<div id="sol2" style="display:none; padding:10px; margin-top:10px; background:#fff3cd;">
+<b>Решение:</b> F = ma = 2 * 3 = 6 Н<br>
+<b>Ответ: 6</b>
+</div>
+</td></tr>
+</table>
+
+<br>
+
+<!-- ЗАДАНИЕ 3 -->
+<table width="100%" bgcolor="white" cellpadding="15" border="1" bordercolor="#1e3c5c">
+<tr><td>
+<b>ЗАДАНИЕ 3 (1 балл)</b>
+<p>В сосуде 2 моля газа. Сколько молекул? (Nа = 6·10²³, ответ в 10²³)</p>
+
+<table>
+<tr><td><input type="text" id="ans3" size="20" placeholder="Введите ответ..."></td>
+<td><button onclick="check3()">Проверить</button></td></tr>
+</table>
+
+<div id="res3" style="display:none; padding:10px; margin-top:10px; background:#f0f8ff;"></div>
+<div id="sol3" style="display:none; padding:10px; margin-top:10px; background:#fff3cd;">
+<b>Решение:</b> N = ν * Nа = 2 * 6·10²³ = 12·10²³<br>
+<b>Ответ: 12</b>
+</div>
+</td></tr>
+</table>
+
+<br>
+
+<!-- ЗАДАНИЕ 4 -->
+<table width="100%" bgcolor="white" cellpadding="15" border="1" bordercolor="#1e3c5c">
+<tr><td>
+<b>ЗАДАНИЕ 4 (1 балл)</b>
+<p>Напряжение 20 В, сопротивление 10 Ом. Чему равна сила тока? (А)</p>
+
+<table>
+<tr><td><input type="text" id="ans4" size="20" placeholder="Введите ответ..."></td>
+<td><button onclick="check4()">Проверить</button></td></tr>
+</table>
+
+<div id="res4" style="display:none; padding:10px; margin-top:10px; background:#f0f8ff;"></div>
+<div id="sol4" style="display:none; padding:10px; margin-top:10px; background:#fff3cd;">
+<b>Решение:</b> I = U/R = 20/10 = 2 А<br>
+<b>Ответ: 2</b>
+</div>
+</td></tr>
+</table>
+
+<br>
+
+<!-- ЗАДАНИЕ 5 -->
+<table width="100%" bgcolor="white" cellpadding="15" border="1" bordercolor="#1e3c5c">
+<tr><td>
+<b>ЗАДАНИЕ 5 (1 балл)</b>
+<p>Газ получил 500 Дж тепла и совершил работу 200 Дж. Изменение внутренней энергии? (Дж)</p>
+
+<table>
+<tr><td><input type="text" id="ans5" size="20" placeholder="Введите ответ..."></td>
+<td><button onclick="check5()">Проверить</button></td></tr>
+</table>
+
+<div id="res5" style="display:none; padding:10px; margin-top:10px; background:#f0f8ff;"></div>
+<div id="sol5" style="display:none; padding:10px; margin-top:10px; background:#fff3cd;">
+<b>Решение:</b> ΔU = Q - A = 500 - 200 = 300 Дж<br>
+<b>Ответ: 300</b>
+</div>
+</td></tr>
+</table>
+
+<br>
+
+<!-- ЗАДАНИЕ 6 -->
+<table width="100%" bgcolor="white" cellpadding="15" border="1" bordercolor="#1e3c5c">
+<tr><td>
+<b>ЗАДАНИЕ 6 (1 балл)</b>
+<p>Частота света 5·10¹⁴ Гц. Энергия фотона? (h=6.6·10⁻³⁴, ответ в 10⁻²⁰ Дж)</p>
+
+<table>
+<tr><td><input type="text" id="ans6" size="20" placeholder="Введите ответ..."></td>
+<td><button onclick="check6()">Проверить</button></td></tr>
+</table>
+
+<div id="res6" style="display:none; padding:10px; margin-top:10px; background:#f0f8ff;"></div>
+<div id="sol6" style="display:none; padding:10px; margin-top:10px; background:#fff3cd;">
+<b>Решение:</b> E = hν = 6.6·10⁻³⁴ * 5·10¹⁴ = 33·10⁻²⁰ Дж<br>
+<b>Ответ: 33</b>
+</div>
+</td></tr>
+</table>
+
+<hr>
+
+<!-- ЧАСТЬ 2 -->
+<center><h2>ЧАСТЬ 2. РАЗВЕРНУТЫЕ РЕШЕНИЯ (21-26) - 52 БАЛЛА</h2></center>
+
+<!-- ЗАДАНИЕ 21 -->
+<table width="100%" bgcolor="white" cellpadding="15" border="1" bordercolor="#1e3c5c">
+<tr><td>
+<b>ЗАДАНИЕ 21 (8 баллов)</b>
+<p><b>ДАНО:</b> Грузы 2 кг и 3 кг на блоке. g = 9.8 м/с²</p>
+<p>НАЙТИ ускорение грузов. (м/с², округлить до 1 знака)</p>
+
+<table>
+<tr><td><input type="text" id="ans21" size="20" placeholder="Введите ответ..."></td>
+<td><button onclick="check21()">Проверить</button></td></tr>
+</table>
+
+<div id="res21" style="display:none; padding:10px; margin-top:10px; background:#f0f8ff;"></div>
+<div id="sol21" style="display:none; padding:10px; margin-top:10px; background:#fff3cd;">
+<b>Решение:</b> a = (m₂ - m₁)g / (m₁ + m₂)<br>
+a = (3-2)*9.8 / (3+2) = 9.8/5 = 1.96 ≈ 2.0 м/с²<br>
+<b>Ответ: 2.0</b>
+</div>
+</td></tr>
+</table>
+
+<br>
+
+<!-- ЗАДАНИЕ 22 -->
+<table width="100%" bgcolor="white" cellpadding="15" border="1" bordercolor="#1e3c5c">
+<tr><td>
+<b>ЗАДАНИЕ 22 (9 баллов)</b>
+<p><b>ДАНО:</b> R₁ = 2 Ом, R₂ = 4 Ом, R₃ = 6 Ом. R₁||R₂ + R₃</p>
+<p>НАЙТИ общее сопротивление. (Ом, до 2 знаков)</p>
+
+<table>
+<tr><td><input type="text" id="ans22" size="20" placeholder="Введите ответ..."></td>
+<td><button onclick="check22()">Проверить</button></td></tr>
+</table>
+
+<div id="res22" style="display:none; padding:10px; margin-top:10px; background:#f0f8ff;"></div>
+<div id="sol22" style="display:none; padding:10px; margin-top:10px; background:#fff3cd;">
+<b>Решение:</b> 1/R₁₂ = 1/2 + 1/4 = 3/4, R₁₂ = 4/3 = 1.333<br>
+R = R₁₂ + R₃ = 1.333 + 6 = 7.333 ≈ 7.33 Ом<br>
+<b>Ответ: 7.33</b>
+</div>
+</td></tr>
+</table>
+
+<br>
+
+<!-- ЗАДАНИЕ 23 -->
+<table width="100%" bgcolor="white" cellpadding="15" border="1" bordercolor="#1e3c5c">
+<tr><td>
+<b>ЗАДАНИЕ 23 (8 баллов)</b>
+<p><b>ДАНО:</b> Водород m=2г, T=300K, M=2г/моль, R=8.31</p>
+<p>НАЙТИ внутреннюю энергию. (Дж, до целых)</p>
+
+<table>
+<tr><td><input type="text" id="ans23" size="20" placeholder="Введите ответ..."></td>
+<td><button onclick="check23()">Проверить</button></td></tr>
+</table>
+
+<div id="res23" style="display:none; padding:10px; margin-top:10px; background:#f0f8ff;"></div>
+<div id="sol23" style="display:none; padding:10px; margin-top:10px; background:#fff3cd;">
+<b>Решение:</b> ν = m/M = 2/2 = 1 моль<br>
+U = (5/2)νRT = 2.5 * 1 * 8.31 * 300 = 6232.5 ≈ 6233 Дж<br>
+<b>Ответ: 6233</b>
+</div>
+</td></tr>
+</table>
+
+<br>
+
+<!-- ЗАДАНИЕ 24 -->
+<table width="100%" bgcolor="white" cellpadding="15" border="1" bordercolor="#1e3c5c">
+<tr><td>
+<b>ЗАДАНИЕ 24 (9 баллов)</b>
+<p><b>ДАНО:</b> Авых=4·10⁻¹⁹ Дж, ν=8·10¹⁴ Гц, h=6.6·10⁻³⁴</p>
+<p>НАЙТИ E кинет. (в 10⁻¹⁹ Дж, 1 знак)</p>
+
+<table>
+<tr><td><input type="text" id="ans24" size="20" placeholder="Введите ответ..."></td>
+<td><button onclick="check24()">Проверить</button></td></tr>
+</table>
+
+<div id="res24" style="display:none; padding:10px; margin-top:10px; background:#f0f8ff;"></div>
+<div id="sol24" style="display:none; padding:10px; margin-top:10px; background:#fff3cd;">
+<b>Решение:</b> E = hν - Авых = 5.28·10⁻¹⁹ - 4·10⁻¹⁹ = 1.28·10⁻¹⁹ ≈ 1.3·10⁻¹⁹ Дж<br>
+<b>Ответ: 1.3</b>
+</div>
+</td></tr>
+</table>
+
+<br>
+
+<!-- ЗАДАНИЕ 25 -->
+<table width="100%" bgcolor="white" cellpadding="15" border="1" bordercolor="#1e3c5c">
+<tr><td>
+<b>ЗАДАНИЕ 25 (9 баллов)</b>
+<p><b>ДАНО:</b> Тело m=2кг, h=20м, g=10м/с², падение без скорости</p>
+<p>НАЙТИ E кинет перед ударом. (Дж)</p>
+
+<table>
+<tr><td><input type="text" id="ans25" size="20" placeholder="Введите ответ..."></td>
+<td><button onclick="check25()">Проверить</button></td></tr>
+</table>
+
+<div id="res25" style="display:none; padding:10px; margin-top:10px; background:#f0f8ff;"></div>
+<div id="sol25" style="display:none; padding:10px; margin-top:10px; background:#fff3cd;">
+<b>Решение:</b> Ek = mgh = 2 * 10 * 20 = 400 Дж<br>
+<b>Ответ: 400</b>
+</div>
+</td></tr>
+</table>
+
+<br>
+
+<!-- ЗАДАНИЕ 26 -->
+<table width="100%" bgcolor="white" cellpadding="15" border="1" bordercolor="#1e3c5c">
+<tr><td>
+<b>ЗАДАНИЕ 26 (9 баллов)</b>
+<p><b>ДАНО:</b> L=0.1 Гн, C=10 мкФ</p>
+<p>НАЙТИ период колебаний. (мс, 2 знака)</p>
+
+<table>
+<tr><td><input type="text" id="ans26" size="20" placeholder="Введите ответ..."></td>
+<td><button onclick="check26()">Проверить</button></td></tr>
+</table>
+
+<div id="res26" style="display:none; padding:10px; margin-top:10px; background:#f0f8ff;"></div>
+<div id="sol26" style="display:none; padding:10px; margin-top:10px; background:#fff3cd;">
+<b>Решение:</b> T = 2π√(LC) = 2*3.14*√(0.1*10⁻⁵) = 6.28*0.001 = 0.00628 с = 6.28 мс<br>
+<b>Ответ: 6.28</b>
+</div>
+</td></tr>
+</table>
+
+<hr>
+
+<!-- КНОПКИ -->
+<center>
+<table cellpadding="10">
+<tr>
+<td><button onclick="resetAll()" style="padding:10px 20px; background:#ffd966">НАЧАТЬ ЗАНОВО</button></td>
+<td><button onclick="showAll()" style="padding:10px 20px; background:#3498db; color:white">ПОКАЗАТЬ ВСЕ РЕШЕНИЯ</button></td>
+<td><a href="index.html" style="padding:10px 20px; background:#2c3e50; color:white; text-decoration:none">НА ГЛАВНУЮ</a></td>
+</tr>
+</table>
+</center>
+
+<br>
+
+</td></tr>
+</table>
+</center>
+
+<script>
+// ОТВЕТЫ
+var total = 0;
+
+function check1() {
+    var ans = parseFloat(document.getElementById('ans1').value);
+    var res = document.getElementById('res1');
+    var sol = document.getElementById('sol1');
+    if (ans == 5) {
+        res.innerHTML = 'ПРАВИЛЬНО! +1 балл';
+        res.style.background = '#d4edda';
+        res.style.display = 'block';
+        sol.style.display = 'none';
+        total = total + 1;
+    } else {
+        res.innerHTML = 'НЕПРАВИЛЬНО. Ответ: 5';
+        res.style.background = '#f8d7da';
+        res.style.display = 'block';
+        sol.style.display = 'block';
+    }
+    document.getElementById('totalScore').innerHTML = 'ИТОГО: ' + total + ' / 100 баллов';
+}
+
+function check2() {
+    var ans = parseFloat(document.getElementById('ans2').value);
+    var res = document.getElementById('res2');
+    var sol = document.getElementById('sol2');
+    if (ans == 6) {
+        res.innerHTML = 'ПРАВИЛЬНО! +1 балл';
+        res.style.background = '#d4edda';
+        res.style.display = 'block';
+        sol.style.display = 'none';
+        total = total + 1;
+    } else {
+        res.innerHTML = 'НЕПРАВИЛЬНО. Ответ: 6';
+        res.style.background = '#f8d7da';
+        res.style.display = 'block';
+        sol.style.display = 'block';
+    }
+    document.getElementById('totalScore').innerHTML = 'ИТОГО: ' + total + ' / 100 баллов';
+}
+
+function check3() {
+    var ans = parseFloat(document.getElementById('ans3').value);
+    var res = document.getElementById('res3');
+    var sol = document.getElementById('sol3');
+    if (ans == 12) {
+        res.innerHTML = 'ПРАВИЛЬНО! +1 балл';
+        res.style.background = '#d4edda';
+        res.style.display = 'block';
+        sol.style.display = 'none';
+        total = total + 1;
+    } else {
+        res.innerHTML = 'НЕПРАВИЛЬНО. Ответ: 12';
+        res.style.background = '#f8d7da';
+        res.style.display = 'block';
+        sol.style.display = 'block';
+    }
+    document.getElementById('totalScore').innerHTML = 'ИТОГО: ' + total + ' / 100 баллов';
+}
+
+function check4() {
+    var ans = parseFloat(document.getElementById('ans4').value);
+    var res = document.getElementById('res4');
+    var sol = document.getElementById('sol4');
+    if (ans == 2) {
+        res.innerHTML = 'ПРАВИЛЬНО! +1 балл';
+        res.style.background = '#d4edda';
+        res.style.display = 'block';
+        sol.style.display = 'none';
+        total = total + 1;
+    } else {
+        res.innerHTML = 'НЕПРАВИЛЬНО. Ответ: 2';
+        res.style.background = '#f8d7da';
+        res.style.display = 'block';
+        sol.style.display = 'block';
+    }
+    document.getElementById('totalScore').innerHTML = 'ИТОГО: ' + total + ' / 100 баллов';
+}
+
+function check5() {
+    var ans = parseFloat(document.getElementById('ans5').value);
+    var res = document.getElementById('res5');
+    var sol = document.getElementById('sol5');
+    if (ans == 300) {
+        res.innerHTML = 'ПРАВИЛЬНО! +1 балл';
+        res.style.background = '#d4edda';
+        res.style.display = 'block';
+        sol.style.display = 'none';
+        total = total + 1;
+    } else {
+        res.innerHTML = 'НЕПРАВИЛЬНО. Ответ: 300';
+        res.style.background = '#f8d7da';
+        res.style.display = 'block';
+        sol.style.display = 'block';
+    }
+    document.getElementById('totalScore').innerHTML = 'ИТОГО: ' + total + ' / 100 баллов';
+}
+
+function check6() {
+    var ans = parseFloat(document.getElementById('ans6').value);
+    var res = document.getElementById('res6');
+    var sol = document.getElementById('sol6');
+    if (ans == 33) {
+        res.innerHTML = 'ПРАВИЛЬНО! +1 балл';
+        res.style.background = '#d4edda';
+        res.style.display = 'block';
+        sol.style.display = 'none';
+        total = total + 1;
+    } else {
+        res.innerHTML = 'НЕПРАВИЛЬНО. Ответ: 33';
+        res.style.background = '#f8d7da';
+        res.style.display = 'block';
+        sol.style.display = 'block';
+    }
+    document.getElementById('totalScore').innerHTML = 'ИТОГО: ' + total + ' / 100 баллов';
+}
+
+function check21() {
+    var ans = parseFloat(document.getElementById('ans21').value);
+    var res = document.getElementById('res21');
+    var sol = document.getElementById('sol21');
+    if (Math.abs(ans - 2.0) < 0.01) {
+        res.innerHTML = 'ПРАВИЛЬНО! +8 баллов';
+        res.style.background = '#d4edda';
+        res.style.display = 'block';
+        sol.style.display = 'none';
+        total = total + 8;
+    } else {
+        res.innerHTML = 'НЕПРАВИЛЬНО. Ответ: 2.0';
+        res.style.background = '#f8d7da';
+        res.style.display = 'block';
+        sol.style.display = 'block';
+    }
+    document.getElementById('totalScore').innerHTML = 'ИТОГО: ' + total + ' / 100 баллов';
+}
+
+function check22() {
+    var ans = parseFloat(document.getElementById('ans22').value);
+    var res = document.getElementById('res22');
+    var sol = document.getElementById('sol22');
+    if (Math.abs(ans - 7.33) < 0.01) {
+        res.innerHTML = 'ПРАВИЛЬНО! +9 баллов';
+        res.style.background = '#d4edda';
+        res.style.display = 'block';
+        sol.style.display = 'none';
+        total = total + 9;
+    } else {
+        res.innerHTML = 'НЕПРАВИЛЬНО. Ответ: 7.33';
+        res.style.background = '#f8d7da';
+        res.style.display = 'block';
+        sol.style.display = 'block';
+    }
+    document.getElementById('totalScore').innerHTML = 'ИТОГО: ' + total + ' / 100 баллов';
+}
+
+function check23() {
+    var ans = parseFloat(document.getElementById('ans23').value);
+    var res = document.getElementById('res23');
+    var sol = document.getElementById('sol23');
+    if (Math.abs(ans - 6233) < 1) {
+        res.innerHTML = 'ПРАВИЛЬНО! +8 баллов';
+        res.style.background = '#d4edda';
+        res.style.display = 'block';
+        sol.style.display = 'none';
+        total = total + 8;
+    } else {
+        res.innerHTML = 'НЕПРАВИЛЬНО. Ответ: 6233';
+        res.style.background = '#f8d7da';
+        res.style.display = 'block';
+        sol.style.display = 'block';
+    }
+    document.getElementById('totalScore').innerHTML = 'ИТОГО: ' + total + ' / 100 баллов';
+}
+
+function check24() {
+    var ans = parseFloat(document.getElementById('ans24').value);
+    var res = document.getElementById('res24');
+    var sol = document.getElementById('sol24');
+    if (Math.abs(ans - 1.3) < 0.01) {
+        res.innerHTML = 'ПРАВИЛЬНО! +9 баллов';
+        res.style.background = '#d4edda';
+        res.style.display = 'block';
+        sol.style.display = 'none';
+        total = total + 9;
+    } else {
+        res.innerHTML = 'НЕПРАВИЛЬНО. Ответ: 1.3';
+        res.style.background = '#f8d7da';
+        res.style.display = 'block';
+        sol.style.display = 'block';
+    }
+    document.getElementById('totalScore').innerHTML = 'ИТОГО: ' + total + ' / 100 баллов';
+}
+
+function check25() {
+    var ans = parseFloat(document.getElementById('ans25').value);
+    var res = document.getElementById('res25');
+    var sol = document.getElementById('sol25');
+    if (Math.abs(ans - 400) < 1) {
+        res.innerHTML = 'ПРАВИЛЬНО! +9 баллов';
+        res.style.background = '#d4edda';
+        res.style.display = 'block';
+        sol.style.display = 'none';
+        total = total + 9;
+    } else {
+        res.innerHTML = 'НЕПРАВИЛЬНО. Ответ: 400';
+        res.style.background = '#f8d7da';
+        res.style.display = 'block';
+        sol.style.display = 'block';
+    }
+    document.getElementById('totalScore').innerHTML = 'ИТОГО: ' + total + ' / 100 баллов';
+}
+
+function check26() {
+    var ans = parseFloat(document.getElementById('ans26').value);
+    var res = document.getElementById('res26');
+    var sol = document.getElementById('sol26');
+    if (Math.abs(ans - 6.28) < 0.01) {
+        res.innerHTML = 'ПРАВИЛЬНО! +9 баллов';
+        res.style.background = '#d4edda';
+        res.style.display = 'block';
+        sol.style.display = 'none';
+        total = total + 9;
+    } else {
+        res.innerHTML = 'НЕПРАВИЛЬНО. Ответ: 6.28';
+        res.style.background = '#f8d7da';
+        res.style.display = 'block';
+        sol.style.display = 'block';
+    }
+    document.getElementById('totalScore').innerHTML = 'ИТОГО: ' + total + ' / 100 баллов';
+}
+
+function resetAll() {
+    total = 0;
+    document.getElementById('totalScore').innerHTML = 'ИТОГО: 0 / 100 баллов';
+    
+    for (var i = 1; i <= 6; i++) {
+        var res = document.getElementById('res' + i);
+        var sol = document.getElementById('sol' + i);
+        var inp = document.getElementById('ans' + i);
+        if (res) { res.style.display = 'none'; }
+        if (sol) { sol.style.display = 'none'; }
+        if (inp) { inp.value = ''; }
+    }
+    
+    for (var j = 21; j <= 26; j++) {
+        var res = document.getElementById('res' + j);
+        var sol = document.getElementById('sol' + j);
+        var inp = document.getElementById('ans' + j);
+        if (res) { res.style.display = 'none'; }
+        if (sol) { sol.style.display = 'none'; }
+        if (inp) { inp.value = ''; }
+    }
+}
+
+function showAll() {
+    for (var i = 1; i <= 6; i++) {
+        var sol = document.getElementById('sol' + i);
+        if (sol) { sol.style.display = 'block'; }
+    }
+    for (var j = 21; j <= 26; j++) {
+        var sol = document.getElementById('sol' + j);
+        if (sol) { sol.style.display = 'block'; }
+    }
+}
+</script>
+
+</body>
+</html>
