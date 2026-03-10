@@ -1,482 +1,194 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
-<title>Материалы для ЕГЭ по физике</title>
+<title>Инженерный калькулятор для ЕГЭ</title>
+<style>
+body { font-family: Arial; background: #1e3c5c; }
+.calc { width: 450px; margin: 20px auto; background: #e6f0fa; padding: 20px; border-radius: 10px; border: 2px solid #2c3e50; }
+.display { background: white; padding: 15px; margin-bottom: 15px; border: 1px solid #2c3e50; border-radius: 5px; }
+#result { width: 100%; font-size: 28px; border: none; text-align: right; outline: none; font-family: Arial; background: white; }
+.buttons { display: grid; grid-template-columns: repeat(6, 1fr); gap: 5px; }
+button { padding: 15px; font-size: 16px; border: 1px solid #2c3e50; border-radius: 5px; background: #f0f8ff; cursor: pointer; }
+button:hover { background: #d4e4f5; }
+.func { background: #c0d4e8; }
+.num { background: white; }
+.op { background: #d4e4f5; }
+.clear { background: #ffb6b6; }
+.equals { background: #ffd966; grid-column: span 2; }
+.memory { background: #2c3e50; color: white; padding: 10px; border-radius: 5px; margin-bottom: 10px; text-align: center; }
+.memory button { padding: 8px; margin: 0 2px; background: #e6f0fa; }
+</style>
 </head>
-<body bgcolor="#e6f0fa" text="#1e3c5c" link="#1e3c5c" vlink="#1e3c5c" alink="red">
+<body>
 
-<center>
-<table width="1000" bgcolor="white" cellpadding="20" border="0" cellspacing="0">
-<tr><td>
+<div class="calc">
+<center><h2>ИНЖЕНЕРНЫЙ КАЛЬКУЛЯТОР</h2></center>
 
-<center>
-<h1>ЕГЭ ФИЗИКА - ВСЕ МАТЕРИАЛЫ</h1>
-</center>
+<div class="memory">
+<span id="memDisplay">Память: 0</span>
+<button onclick="memClear()">MC</button>
+<button onclick="memRecall()">MR</button>
+<button onclick="memAdd()">M+</button>
+<button onclick="memSub()">M-</button>
+</div>
 
+<div class="display">
+<input type="text" id="result" readonly value="0">
+</div>
+
+<div class="buttons">
+<!-- 1 ряд -->
+<button class="func" onclick="add('pi')">π</button>
+<button class="func" onclick="add('e')">e</button>
+<button class="func" onclick="add('sin(')">sin</button>
+<button class="func" onclick="add('cos(')">cos</button>
+<button class="func" onclick="add('tan(')">tan</button>
+<button class="clear" onclick="clearAll()">C</button>
+
+<!-- 2 ряд -->
+<button class="func" onclick="add('asin(')">asin</button>
+<button class="func" onclick="add('acos(')">acos</button>
+<button class="func" onclick="add('atan(')">atan</button>
+<button class="func" onclick="add('ln(')">ln</button>
+<button class="func" onclick="add('log(')">log</button>
+<button class="clear" onclick="backspace()">⌫</button>
+
+<!-- 3 ряд -->
+<button class="func" onclick="add('sqrt(')">√</button>
+<button class="func" onclick="add('^')">x^y</button>
+<button class="func" onclick="add('abs(')">|x|</button>
+<button class="func" onclick="add('1/')">1/x</button>
+<button class="op" onclick="add('(')">(</button>
+<button class="op" onclick="add(')')">)</button>
+
+<!-- 4 ряд -->
+<button class="num" onclick="add('7')">7</button>
+<button class="num" onclick="add('8')">8</button>
+<button class="num" onclick="add('9')">9</button>
+<button class="op" onclick="add('/')">/</button>
+<button class="op" onclick="add('*')">*</button>
+<button class="op" onclick="add('-')">-</button>
+
+<!-- 5 ряд -->
+<button class="num" onclick="add('4')">4</button>
+<button class="num" onclick="add('5')">5</button>
+<button class="num" onclick="add('6')">6</button>
+<button class="op" onclick="add('+')">+</button>
+<button class="equals" colspan="2" onclick="calculate()">=</button>
+
+<!-- 6 ряд -->
+<button class="num" onclick="add('1')">1</button>
+<button class="num" onclick="add('2')">2</button>
+<button class="num" onclick="add('3')">3</button>
+<button class="num" onclick="add('0')">0</button>
+<button class="num" onclick="add('.')">.</button>
+</div>
+
+<div style="margin-top:15px; font-size:12px; text-align:center">
 <hr>
+<b>Как считать:</b><br>
+sin(30*pi/180) = 0.5 - синус 30°<br>
+2^3 = 8 - два в третьей степени<br>
+sqrt(144) = 12 - корень из 144<br>
+ln(10) = 2.3026 - натуральный логарифм<br>
+log(100) = 2 - десятичный логарифм
+</div>
+</div>
 
-<table width="100%" bgcolor="#2c3e50" cellpadding="10">
-<tr>
-<td>
-<font color="white">
-<b>
-<a href="index.html" style="color:white">ГЛАВНАЯ</a> | 
-<a href="kurs.html" style="color:white">КУРСЫ</a> | 
-<a href="ege2024.html" style="color:white">ЕГЭ 2024</a> | 
-<a href="materialy.html" style="color:white">МАТЕРИАЛЫ</a>
-</b>
-</font>
-</td>
-</tr>
-</table>
+<script>
+var display = document.getElementById('result');
+var memory = 0;
 
-<hr>
+function add(val) {
+    if(val == 'pi') {
+        display.value += '3.14159';
+    } else if(val == 'e') {
+        display.value += '2.71828';
+    } else if(val == '^') {
+        display.value += '^';
+    } else {
+        display.value += val;
+    }
+}
 
-<center>
-<table width="100%" bgcolor="#ffd966" cellpadding="10">
-<tr><td align="center">
-<font size="4" color="#1e3c5c"><b>ВСЕ ФОРМУЛЫ ДЛЯ ЕГЭ ПО ФИЗИКЕ</b></font>
-</td></tr>
-</table>
-</center>
+function clearAll() {
+    display.value = '0';
+}
 
-<br>
+function backspace() {
+    if(display.value.length > 1) {
+        display.value = display.value.slice(0, -1);
+    } else {
+        display.value = '0';
+    }
+}
 
-<!-- СОДЕРЖАНИЕ -->
-<table width="100%" bgcolor="#f0f8ff" cellpadding="10" border="1" bordercolor="#1e3c5c">
-<tr><td>
-<center><b>СОДЕРЖАНИЕ:</b></center>
-<ol>
-<li><a href="#mech">Механика</a></li>
-<li><a href="#mol">Молекулярная физика и термодинамика</a></li>
-<li><a href="#electro">Электродинамика</a></li>
-<li><a href="#optics">Оптика</a></li>
-<li><a href="#quant">Квантовая физика</a></li>
-<li><a href="#const">Константы</a></li>
-<li><a href="#links">Полезные ссылки</a></li>
-</ol>
-</td></tr>
-</table>
+function calculate() {
+    try {
+        var expr = display.value;
+        
+        // Замена символов для eval
+        expr = expr.replace(/\^/g, '**');
+        expr = expr.replace(/pi/g, 'Math.PI');
+        expr = expr.replace(/e/g, 'Math.E');
+        expr = expr.replace(/sin/g, 'Math.sin');
+        expr = expr.replace(/cos/g, 'Math.cos');
+        expr = expr.replace(/tan/g, 'Math.tan');
+        expr = expr.replace(/asin/g, 'Math.asin');
+        expr = expr.replace(/acos/g, 'Math.acos');
+        expr = expr.replace(/atan/g, 'Math.atan');
+        expr = expr.replace(/ln/g, 'Math.log');
+        expr = expr.replace(/log/g, 'Math.log10');
+        expr = expr.replace(/sqrt/g, 'Math.sqrt');
+        expr = expr.replace(/abs/g, 'Math.abs');
+        
+        var result = eval(expr);
+        display.value = result;
+    } catch(e) {
+        display.value = 'Ошибка';
+    }
+}
 
-<br>
+function memClear() {
+    memory = 0;
+    document.getElementById('memDisplay').innerHTML = 'Память: 0';
+}
 
-<!-- 1. МЕХАНИКА -->
-<table width="100%" bgcolor="white" cellpadding="15" border="1" bordercolor="#1e3c5c">
-<tr><td>
-<a name="mech"></a>
-<center><h2>1. МЕХАНИКА</h2></center>
+function memRecall() {
+    display.value += memory;
+}
 
-<h3>Кинематика</h3>
-<table width="100%" border="1" cellpadding="8">
-<tr bgcolor="#2c3e50" style="color:white">
-<th>Название</th>
-<th>Формула</th>
-<th>Обозначения</th>
-</tr>
-<tr><td>Скорость при равномерном движении</td><td>v = s/t</td><td>s - путь, t - время</td></tr>
-<tr><td>Ускорение</td><td>a = (v - v0)/t</td><td>v0 - нач. скорость, v - кон. скорость</td></tr>
-<tr><td>Скорость при равноускоренном движении</td><td>v = v0 + at</td><td></td></tr>
-<tr><td>Перемещение при равноускоренном движении</td><td>s = v0t + at^2/2</td><td></td></tr>
-<tr><td>Перемещение без времени</td><td>s = (v^2 - v0^2)/(2a)</td><td></td></tr>
-<tr><td>Скорость при равномерном движении по окружности</td><td>v = 2πR/T</td><td>R - радиус, T - период</td></tr>
-<tr><td>Центростремительное ускорение</td><td>a = v^2/R</td><td></td></tr>
-<tr><td>Угловая скорость</td><td>ω = 2π/T = 2πν</td><td>ν - частота</td></tr>
-</table>
+function memAdd() {
+    try {
+        var val = parseFloat(display.value);
+        memory += val;
+        document.getElementById('memDisplay').innerHTML = 'Память: ' + memory;
+    } catch(e) {}
+}
 
-<h3>Динамика</h3>
-<table width="100%" border="1" cellpadding="8">
-<tr bgcolor="#2c3e50" style="color:white">
-<th>Название</th>
-<th>Формула</th>
-<th>Обозначения</th>
-</tr>
-<tr><td>Второй закон Ньютона</td><td>F = ma</td><td>m - масса, a - ускорение</td></tr>
-<tr><td>Сила тяжести</td><td>Fтяж = mg</td><td>g = 9.8 м/с^2</td></tr>
-<tr><td>Сила упругости (закон Гука)</td><td>Fупр = -kx</td><td>k - жесткость, x - деформация</td></tr>
-<tr><td>Сила трения скольжения</td><td>Fтр = μN</td><td>μ - коэф. трения, N - сила реакции опоры</td></tr>
-<tr><td>Сила трения покоя</td><td>Fтр ≤ μN</td><td></td></tr>
-<tr><td>Закон всемирного тяготения</td><td>F = G·m1·m2/r^2</td><td>G = 6.67·10^-11 Н·м^2/кг^2</td></tr>
-<tr><td>Первая космическая скорость</td><td>v = √(GM/R)</td><td></td></tr>
-<tr><td>Вес тела при ускоренном движении</td><td>P = m(g ± a)</td><td></td></tr>
-</table>
+function memSub() {
+    try {
+        var val = parseFloat(display.value);
+        memory -= val;
+        document.getElementById('memDisplay').innerHTML = 'Память: ' + memory;
+    } catch(e) {}
+}
 
-<h3>Законы сохранения</h3>
-<table width="100%" border="1" cellpadding="8">
-<tr bgcolor="#2c3e50" style="color:white">
-<th>Название</th>
-<th>Формула</th>
-<th>Обозначения</th>
-</tr>
-<tr><td>Импульс тела</td><td>p = mv</td><td></td></tr>
-<tr><td>Импульс силы</td><td>Ft = Δp</td><td></td></tr>
-<tr><td>Закон сохранения импульса</td><td>m1v1 + m2v2 = m1v1' + m2v2'</td><td></td></tr>
-<tr><td>Кинетическая энергия</td><td>Eк = mv^2/2</td><td></td></tr>
-<tr><td>Потенциальная энергия (поднятое тело)</td><td>Eп = mgh</td><td></td></tr>
-<tr><td>Потенциальная энергия (пружина)</td><td>Eп = kx^2/2</td><td></td></tr>
-<tr><td>Работа силы</td><td>A = F·s·cosα</td><td>α - угол между F и s</td></tr>
-<tr><td>Мощность</td><td>N = A/t = F·v</td><td></td></tr>
-<tr><td>КПД</td><td>η = Aполезн/Aзатрач · 100%</td><td></td></tr>
-</table>
-
-<h3>Статика и гидростатика</h3>
-<table width="100%" border="1" cellpadding="8">
-<tr bgcolor="#2c3e50" style="color:white">
-<th>Название</th>
-<th>Формула</th>
-<th>Обозначения</th>
-</tr>
-<tr><td>Момент силы</td><td>M = F·l</td><td>l - плечо силы</td></tr>
-<tr><td>Условие равновесия рычага</td><td>F1·l1 = F2·l2</td><td></td></tr>
-<tr><td>Давление</td><td>p = F/S</td><td></td></tr>
-<tr><td>Давление жидкости</td><td>p = ρgh</td><td>ρ - плотность, h - глубина</td></tr>
-<tr><td>Сила Архимеда</td><td>Fарх = ρж·g·Vт</td><td>Vт - объем погруженной части</td></tr>
-<tr><td>Условие плавания тел</td><td>Fарх = mg</td><td></td></tr>
-</table>
-</td></tr></table>
-<br>
-
-<!-- 2. МОЛЕКУЛЯРНАЯ ФИЗИКА -->
-<table width="100%" bgcolor="white" cellpadding="15" border="1" bordercolor="#1e3c5c">
-<tr><td>
-<a name="mol"></a>
-<center><h2>2. МОЛЕКУЛЯРНАЯ ФИЗИКА И ТЕРМОДИНАМИКА</h2></center>
-
-<h3>МКТ</h3>
-<table width="100%" border="1" cellpadding="8">
-<tr bgcolor="#2c3e50" style="color:white">
-<th>Название</th>
-<th>Формула</th>
-<th>Обозначения</th>
-</tr>
-<tr><td>Количество вещества</td><td>ν = m/M = N/Na</td><td>M - молярная масса, Na = 6·10^23</td></tr>
-<tr><td>Масса молекулы</td><td>m0 = M/Na</td><td></td></tr>
-<tr><td>Основное уравнение МКТ</td><td>p = (1/3)nm0v^2 = (2/3)nE</td><td>n - концентрация</td></tr>
-<tr><td>Связь давления со средней кинетической энергией</td><td>p = (2/3)nE</td><td></td></tr>
-</table>
-
-<h3>Уравнение состояния</h3>
-<table width="100%" border="1" cellpadding="8">
-<tr bgcolor="#2c3e50" style="color:white">
-<th>Название</th>
-<th>Формула</th>
-<th>Обозначения</th>
-</tr>
-<tr><td>Уравнение Менделеева-Клапейрона</td><td>pV = νRT</td><td>R = 8.31 Дж/(моль·К)</td></tr>
-<tr><td>Закон Бойля-Мариотта (T=const)</td><td>pV = const</td><td></td></tr>
-<tr><td>Закон Гей-Люссака (p=const)</td><td>V/T = const</td><td></td></tr>
-<tr><td>Закон Шарля (V=const)</td><td>p/T = const</td><td></td></tr>
-</table>
-
-<h3>Термодинамика</h3>
-<table width="100%" border="1" cellpadding="8">
-<tr bgcolor="#2c3e50" style="color:white">
-<th>Название</th>
-<th>Формула</th>
-<th>Обозначения</th>
-</tr>
-<tr><td>Внутренняя энергия идеального газа</td><td>U = (i/2)νRT</td><td>i - число степеней свободы</td></tr>
-<tr><td>Для одноатомного газа</td><td>U = (3/2)νRT</td><td>i=3</td></tr>
-<tr><td>Для двухатомного газа</td><td>U = (5/2)νRT</td><td>i=5</td></tr>
-<tr><td>Работа газа</td><td>A = pΔV</td><td>при изобарном процессе</td></tr>
-<tr><td>Первое начало термодинамики</td><td>Q = ΔU + A</td><td></td></tr>
-<tr><td>Количество теплоты при нагревании</td><td>Q = cmΔt</td><td>c - удельная теплоемкость</td></tr>
-<tr><td>Количество теплоты при плавлении</td><td>Q = λm</td><td>λ - удельная теплота плавления</td></tr>
-<tr><td>Количество теплоты при парообразовании</td><td>Q = Lm</td><td>L - удельная теплота парообразования</td></tr>
-<tr><td>Количество теплоты при сгорании</td><td>Q = qm</td><td>q - удельная теплота сгорания</td></tr>
-<tr><td>КПД теплового двигателя</td><td>η = (Qн - Qх)/Qн = A/Qн</td><td></td></tr>
-<tr><td>КПД цикла Карно</td><td>η = (Tн - Tх)/Tн</td><td></td></tr>
-</table>
-</td></tr></table>
-<br>
-
-<!-- 3. ЭЛЕКТРОДИНАМИКА -->
-<table width="100%" bgcolor="white" cellpadding="15" border="1" bordercolor="#1e3c5c">
-<tr><td>
-<a name="electro"></a>
-<center><h2>3. ЭЛЕКТРОДИНАМИКА</h2></center>
-
-<h3>Электростатика</h3>
-<table width="100%" border="1" cellpadding="8">
-<tr bgcolor="#2c3e50" style="color:white">
-<th>Название</th>
-<th>Формула</th>
-<th>Обозначения</th>
-</tr>
-<tr><td>Закон Кулона</td><td>F = k·|q1·q2|/r^2</td><td>k = 9·10^9 Н·м^2/Кл^2</td></tr>
-<tr><td>Напряженность электрического поля</td><td>E = F/q</td><td></td></tr>
-<tr><td>Напряженность поля точечного заряда</td><td>E = k·q/r^2</td><td></td></tr>
-<tr><td>Принцип суперпозиции полей</td><td>E = E1 + E2 + ...</td><td>векторно</td></tr>
-<tr><td>Потенциал электрического поля</td><td>φ = Wп/q</td><td></td></tr>
-<tr><td>Потенциал поля точечного заряда</td><td>φ = k·q/r</td><td></td></tr>
-<tr><td>Работа электрического поля</td><td>A = q(φ1 - φ2)</td><td></td></tr>
-<tr><td>Связь напряженности и напряжения</td><td>E = U/d</td><td>для однородного поля</td></tr>
-<tr><td>Электроемкость конденсатора</td><td>C = q/U</td><td></td></tr>
-<tr><td>Электроемкость плоского конденсатора</td><td>C = ε0·ε·S/d</td><td>ε0 = 8.85·10^-12 Ф/м</td></tr>
-<tr><td>Энергия заряженного конденсатора</td><td>W = qU/2 = CU^2/2 = q^2/(2C)</td><td></td></tr>
-</table>
-
-<h3>Постоянный ток</h3>
-<table width="100%" border="1" cellpadding="8">
-<tr bgcolor="#2c3e50" style="color:white">
-<th>Название</th>
-<th>Формула</th>
-<th>Обозначения</th>
-</tr>
-<tr><td>Сила тока</td><td>I = q/t</td><td></td></tr>
-<tr><td>Закон Ома для участка цепи</td><td>I = U/R</td><td></td></tr>
-<tr><td>Сопротивление проводника</td><td>R = ρ·l/S</td><td>ρ - удельное сопротивление</td></tr>
-<tr><td>Закон Ома для полной цепи</td><td>I = ε/(R + r)</td><td>ε - ЭДС, r - внутр. сопротивление</td></tr>
-<tr><td>Последовательное соединение</td><td>R = R1 + R2, I = const, U = U1+U2</td><td></td></tr>
-<tr><td>Параллельное соединение</td><td>1/R = 1/R1 + 1/R2, U = const, I = I1+I2</td><td></td></tr>
-<tr><td>Работа тока</td><td>A = IUt</td><td></td></tr>
-<tr><td>Мощность тока</td><td>P = IU = I^2R = U^2/R</td><td></td></tr>
-<tr><td>Закон Джоуля-Ленца</td><td>Q = I^2Rt</td><td></td></tr>
-</table>
-
-<h3>Магнетизм</h3>
-<table width="100%" border="1" cellpadding="8">
-<tr bgcolor="#2c3e50" style="color:white">
-<th>Название</th>
-<th>Формула</th>
-<th>Обозначения</th>
-</tr>
-<tr><td>Индукция магнитного поля</td><td>B = Fмакс/(I·l)</td><td></td></tr>
-<tr><td>Сила Ампера</td><td>F = B·I·l·sinα</td><td>α - угол между B и проводником</td></tr>
-<tr><td>Сила Лоренца</td><td>F = q·v·B·sinα</td><td></td></tr>
-<tr><td>Магнитный поток</td><td>Ф = B·S·cosα</td><td></td></tr>
-<tr><td>Закон электромагнитной индукции</td><td>ε = -ΔФ/Δt</td><td></td></tr>
-<tr><td>ЭДС индукции в движущемся проводнике</td><td>ε = B·l·v·sinα</td><td></td></tr>
-</table>
-
-<h3>Электромагнитные колебания</h3>
-<table width="100%" border="1" cellpadding="8">
-<tr bgcolor="#2c3e50" style="color:white">
-<th>Название</th>
-<th>Формула</th>
-<th>Обозначения</th>
-</tr>
-<tr><td>Период колебаний в контуре</td><td>T = 2π√(LC)</td><td>формула Томсона</td></tr>
-<tr><td>Частота колебаний</td><td>ν = 1/T</td><td></td></tr>
-<tr><td>Циклическая частота</td><td>ω = 2πν = 2π/T</td><td></td></tr>
-<tr><td>Емкостное сопротивление</td><td>Xc = 1/(ωC)</td><td></td></tr>
-<tr><td>Индуктивное сопротивление</td><td>XL = ωL</td><td></td></tr>
-</table>
-</td></tr></table>
-<br>
-
-<!-- 4. ОПТИКА -->
-<table width="100%" bgcolor="white" cellpadding="15" border="1" bordercolor="#1e3c5c">
-<tr><td>
-<a name="optics"></a>
-<center><h2>4. ОПТИКА</h2></center>
-
-<h3>Геометрическая оптика</h3>
-<table width="100%" border="1" cellpadding="8">
-<tr bgcolor="#2c3e50" style="color:white">
-<th>Название</th>
-<th>Формула</th>
-<th>Обозначения</th>
-</tr>
-<tr><td>Закон отражения</td><td>α = β</td><td>α - угол падения, β - угол отражения</td></tr>
-<tr><td>Закон преломления</td><td>sinα/sinβ = n21 = n2/n1</td><td></td></tr>
-<tr><td>Показатель преломления</td><td>n = c/v</td><td>c = 3·10^8 м/с</td></tr>
-<tr><td>Формула тонкой линзы</td><td>1/F = 1/d + 1/f</td><td>d - расст. до предмета, f - до изображения</td></tr>
-<tr><td>Оптическая сила линзы</td><td>D = 1/F (в метрах)</td><td>единица - диоптрия</td></tr>
-<tr><td>Увеличение линзы</td><td>Γ = f/d = H/h</td><td></td></tr>
-</table>
-
-<h3>Волновая оптика</h3>
-<table width="100%" border="1" cellpadding="8">
-<tr bgcolor="#2c3e50" style="color:white">
-<th>Название</th>
-<th>Формула</th>
-<th>Обозначения</th>
-</tr>
-<tr><td>Скорость света</td><td>c = λν</td><td>λ - длина волны, ν - частота</td></tr>
-<tr><td>Условие интерференционного максимума</td><td>Δd = kλ</td><td>k = 0,1,2...</td></tr>
-<tr><td>Условие интерференционного минимума</td><td>Δd = (2k+1)λ/2</td><td></td></tr>
-<tr><td>Условие дифракционного максимума</td><td>d·sinφ = kλ</td><td>d - период решетки</td></tr>
-<tr><td>Период дифракционной решетки</td><td>d = 1/N</td><td>N - число штрихов на 1 мм</td></tr>
-</table>
-</td></tr></table>
-<br>
-
-<!-- 5. КВАНТОВАЯ ФИЗИКА -->
-<table width="100%" bgcolor="white" cellpadding="15" border="1" bordercolor="#1e3c5c">
-<tr><td>
-<a name="quant"></a>
-<center><h2>5. КВАНТОВАЯ ФИЗИКА</h2></center>
-
-<h3>Фотоэффект</h3>
-<table width="100%" border="1" cellpadding="8">
-<tr bgcolor="#2c3e50" style="color:white">
-<th>Название</th>
-<th>Формула</th>
-<th>Обозначения</th>
-</tr>
-<tr><td>Энергия фотона</td><td>E = hν = hc/λ</td><td>h = 6.63·10^-34 Дж·с</td></tr>
-<tr><td>Уравнение Эйнштейна для фотоэффекта</td><td>hν = Aвых + mv^2/2</td><td></td></tr>
-<tr><td>Красная граница фотоэффекта</td><td>νmin = Aвых/h, λmax = hc/Aвых</td><td></td></tr>
-<tr><td>Импульс фотона</td><td>p = h/λ</td><td></td></tr>
-</table>
-
-<h3>Атомная физика</h3>
-<table width="100%" border="1" cellpadding="8">
-<tr bgcolor="#2c3e50" style="color:white">
-<th>Название</th>
-<th>Формула</th>
-<th>Обозначения</th>
-</tr>
-<tr><td>Энергия электрона на орбите</td><td>En = -13.6/n^2 эВ</td><td>n = 1,2,3...</td></tr>
-<tr><td>Постулаты Бора</td><td>hν = En - Em</td><td></td></tr>
-<tr><td>Радиус орбиты</td><td>rn = r1·n^2</td><td>r1 = 0.53·10^-10 м</td></tr>
-</table>
-
-<h3>Ядерная физика</h3>
-<table width="100%" border="1" cellpadding="8">
-<tr bgcolor="#2c3e50" style="color:white">
-<th>Название</th>
-<th>Формула</th>
-<th>Обозначения</th>
-</tr>
-<tr><td>Закон радиоактивного распада</td><td>N = N0·2^(-t/T)</td><td>T - период полураспада</td></tr>
-<tr><td>Энергия связи ядра</td><td>Eсв = Δm·c^2</td><td></td></tr>
-<tr><td>Дефект масс</td><td>Δm = (Z·mp + N·mn) - Mя</td><td></td></tr>
-<tr><td>Ядерные реакции</td><td>Сумма масс и зарядов сохраняется</td><td></td></tr>
-</table>
-</td></tr></table>
-<br>
-
-<!-- 6. КОНСТАНТЫ -->
-<table width="100%" bgcolor="white" cellpadding="15" border="1" bordercolor="#1e3c5c">
-<tr><td>
-<a name="const"></a>
-<center><h2>6. ФИЗИЧЕСКИЕ КОНСТАНТЫ</h2></center>
-
-<table width="100%" border="1" cellpadding="8">
-<tr bgcolor="#2c3e50" style="color:white">
-<th>Константа</th>
-<th>Обозначение</th>
-<th>Значение</th>
-</tr>
-<tr><td>Скорость света в вакууме</td><td>c</td><td>3·10^8 м/с</td></tr>
-<tr><td>Постоянная Планка</td><td>h</td><td>6.63·10^-34 Дж·с</td></tr>
-<tr><td>Постоянная Больцмана</td><td>k</td><td>1.38·10^-23 Дж/К</td></tr>
-<tr><td>Постоянная Авогадро</td><td>Na</td><td>6.02·10^23 моль^-1</td></tr>
-<tr><td>Газовая постоянная</td><td>R</td><td>8.31 Дж/(моль·К)</td></tr>
-<tr><td>Заряд электрона</td><td>e</td><td>1.6·10^-19 Кл</td></tr>
-<tr><td>Масса электрона</td><td>me</td><td>9.1·10^-31 кг</td></tr>
-<tr><td>Масса протона</td><td>mp</td><td>1.67·10^-27 кг</td></tr>
-<tr><td>Масса нейтрона</td><td>mn</td><td>1.67·10^-27 кг</td></tr>
-<tr><td>Гравитационная постоянная</td><td>G</td><td>6.67·10^-11 Н·м^2/кг^2</td></tr>
-<tr><td>Электрическая постоянная</td><td>ε0</td><td>8.85·10^-12 Ф/м</td></tr>
-<tr><td>Коэффициент k в законе Кулона</td><td>k = 1/(4πε0)</td><td>9·10^9 Н·м^2/Кл^2</td></tr>
-<tr><td>Ускорение свободного падения</td><td>g</td><td>9.8 м/с^2</td></tr>
-<tr><td>Атомная единица массы</td><td>а.е.м.</td><td>1.66·10^-27 кг</td></tr>
-</table>
-</td></tr></table>
-<br>
-
-<!-- 7. ПОЛЕЗНЫЕ ССЫЛКИ -->
-<table width="100%" bgcolor="white" cellpadding="15" border="1" bordercolor="#1e3c5c">
-<tr><td>
-<a name="links"></a>
-<center><h2>7. ПОЛЕЗНЫЕ ССЫЛКИ ДЛЯ ПОДГОТОВКИ</h2></center>
-
-<table width="100%" border="1" cellpadding="10">
-<tr bgcolor="#2c3e50" style="color:white">
-<th>Ресурс</th>
-<th>Ссылка</th>
-<th>Описание</th>
-</tr>
-
-<tr>
-<td><b>ФИПИ</b></td>
-<td><a href="http://fipi.ru" target="_blank">fipi.ru</a></td>
-<td>Официальный сайт ФИПИ - демоверсии, кодификаторы, спецификации</td>
-</tr>
-
-<tr>
-<td><b>РЕШУ ЕГЭ</b></td>
-<td><a href="https://ege.sdamgia.ru" target="_blank">ege.sdamgia.ru</a></td>
-<td>Тысячи заданий с решениями, каталог по темам</td>
-</tr>
-
-<tr>
-<td><b>РЕАЛЬНЫЕ ВАРИАНТЫ ЕГЭ</b></td>
-<td><a href="https://4ege.ru" target="_blank">4ege.ru</a></td>
-<td>Варианты прошлых лет с ответами</td>
-</tr>
-
-<tr>
-<td><b>ОТКРЫТЫЙ БАНК ЗАДАНИЙ</b></td>
-<td><a href="http://os.fipi.ru" target="_blank">os.fipi.ru</a></td>
-<td>Все задания ЕГЭ от разработчиков</td>
-</tr>
-
-<tr>
-<td><b>YOUTUBE - ФИЗИКА ЕГЭ</b></td>
-<td><a href="https://youtube.com" target="_blank">youtube.com</a></td>
-<td>Видеоуроки: "Физика ЕГЭ 100 баллов", "Физика с нуля"</td>
-</tr>
-
-<tr>
-<td><b>ЕГЭ.РФ</b></td>
-<td><a href="http://ege.edu.ru" target="_blank">ege.edu.ru</a></td>
-<td>Официальный портал ЕГЭ, расписание, результаты</td>
-</tr>
-
-<tr>
-<td><b>СТУДВОРК</b></td>
-<td><a href="https://studwork.ru" target="_blank">studwork.ru</a></td>
-<td>Справочник по физике, таблицы, формулы</td>
-</tr>
-
-<tr>
-<td><b>ТЕЛЕГРАМ-КАНАЛЫ</b></td>
-<td>@ege_phys</td>
-<td>Каналы с ежедневными заданиями и разборами</td>
-</tr>
-</table>
-
-<p><br></p>
-
-<h3>Что скачать для подготовки:</h3>
-<ul>
-<li><a href="#">Кодификатор ЕГЭ 2024 (PDF)</a></li>
-<li><a href="#">Спецификация ЕГЭ 2024 (PDF)</a></li>
-<li><a href="#">Демоверсия ЕГЭ 2024 с ответами</a></li>
-<li><a href="#">Справочные материалы на ЕГЭ</a></li>
-<li><a href="#">Таблица "Все формулы по физике"</a></li>
-<li><a href="#">Шпаргалки по разделам</a></li>
-</ul>
-</td></tr>
-</table>
-<br>
-
-<!-- КНОПКИ -->
-<center>
-<table cellpadding="10">
-<tr>
-<td><a href="index.html" style="padding:10px 20px; background:#2c3e50; color:white; text-decoration:none">НА ГЛАВНУЮ</a></td>
-<td><a href="ege2024.html" style="padding:10px 20px; background:#3498db; color:white; text-decoration:none">ПЕРЕЙТИ К ТЕСТАМ</a></td>
-</tr>
-</table>
-</center>
-
-<br>
-
-<hr>
-<center>
-<font color="#1e3c5c" size="2">
-<b>Все формулы для ЕГЭ по физике | 2024 год</b><br>
-Сделано специально для подготовки к экзамену
-</font>
-</center>
-
-</td></tr>
-</table>
-</center>
+// Поддержка клавиатуры
+document.addEventListener('keydown', function(e) {
+    if(e.key >= '0' && e.key <= '9') add(e.key);
+    if(e.key == '.') add('.');
+    if(e.key == '+') add('+');
+    if(e.key == '-') add('-');
+    if(e.key == '*') add('*');
+    if(e.key == '/') add('/');
+    if(e.key == '(') add('(');
+    if(e.key == ')') add(')');
+    if(e.key == 'Enter') calculate();
+    if(e.key == 'Escape') clearAll();
+    if(e.key == 'Backspace') backspace();
+});
+</script>
 
 </body>
 </html>
