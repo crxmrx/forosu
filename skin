@@ -1,16 +1,16 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
-<title>ЕГЭ Физика 2024 - Полный тренажер</title>
+<title>Материалы для ЕГЭ по физике</title>
 </head>
-<body bgcolor="#e6f0fa" text="#1e3c5c" link="white" vlink="white">
+<body bgcolor="#e6f0fa" text="#1e3c5c" link="#1e3c5c" vlink="#1e3c5c" alink="red">
 
 <center>
 <table width="1000" bgcolor="white" cellpadding="20" border="0" cellspacing="0">
 <tr><td>
 
 <center>
-<h1>ЕГЭ ФИЗИКА 2024 - ПОЛНЫЙ ТРЕНАЖЕР</h1>
+<h1>ЕГЭ ФИЗИКА - ВСЕ МАТЕРИАЛЫ</h1>
 </center>
 
 <hr>
@@ -22,7 +22,8 @@
 <b>
 <a href="index.html" style="color:white">ГЛАВНАЯ</a> | 
 <a href="kurs.html" style="color:white">КУРСЫ</a> | 
-<a href="ege2024.html" style="color:white">ЕГЭ 2024</a>
+<a href="ege2024.html" style="color:white">ЕГЭ 2024</a> | 
+<a href="materialy.html" style="color:white">МАТЕРИАЛЫ</a>
 </b>
 </font>
 </td>
@@ -32,567 +33,450 @@
 <hr>
 
 <center>
-<table width="100%" bgcolor="#1e3c5c" cellpadding="10">
-<tr><td>
-<font color="white">
-<b>СТРУКТУРА ЕГЭ 2024:</b> Часть 1 (задания 1-20) - 28 баллов | Часть 2 (задания 21-26) - 52 балла | ВСЕГО: 26 заданий - 100 баллов
-</font>
-</td></tr>
-</table>
-</center>
-
-<br>
-
-<center>
 <table width="100%" bgcolor="#ffd966" cellpadding="10">
 <tr><td align="center">
-<font size="5" color="#1e3c5c"><b id="totalScore">ИТОГО: 0 / 100 баллов</b></font>
+<font size="4" color="#1e3c5c"><b>ВСЕ ФОРМУЛЫ ДЛЯ ЕГЭ ПО ФИЗИКЕ</b></font>
 </td></tr>
 </table>
 </center>
 
-<hr>
+<br>
 
-<!-- ЧАСТЬ 1 - 20 ЗАДАНИЙ -->
-<center><h2>ЧАСТЬ 1. КРАТКИЕ ОТВЕТЫ (ЗАДАНИЯ 1-20) - 28 БАЛЛОВ</h2></center>
+<!-- СОДЕРЖАНИЕ -->
+<table width="100%" bgcolor="#f0f8ff" cellpadding="10" border="1" bordercolor="#1e3c5c">
+<tr><td>
+<center><b>СОДЕРЖАНИЕ:</b></center>
+<ol>
+<li><a href="#mech">Механика</a></li>
+<li><a href="#mol">Молекулярная физика и термодинамика</a></li>
+<li><a href="#electro">Электродинамика</a></li>
+<li><a href="#optics">Оптика</a></li>
+<li><a href="#quant">Квантовая физика</a></li>
+<li><a href="#const">Константы</a></li>
+<li><a href="#links">Полезные ссылки</a></li>
+</ol>
+</td></tr>
+</table>
 
-<!-- ЗАДАНИЕ 1 - Механика (кинематика) -->
+<br>
+
+<!-- 1. МЕХАНИКА -->
 <table width="100%" bgcolor="white" cellpadding="15" border="1" bordercolor="#1e3c5c">
 <tr><td>
-<b>ЗАДАНИЕ 1 (1 балл)</b>
-<p>Тело движется равномерно. За 10 секунд прошло 50 метров. Чему равна скорость? (Ответ в м/с)</p>
-<table width="100%">
-<tr><td width="70%"><input type="text" id="ans1" size="20" placeholder="Введите ответ..."></td>
-<td><button onclick="check1()">Проверить</button></td></tr>
+<a name="mech"></a>
+<center><h2>1. МЕХАНИКА</h2></center>
+
+<h3>Кинематика</h3>
+<table width="100%" border="1" cellpadding="8">
+<tr bgcolor="#2c3e50" style="color:white">
+<th>Название</th>
+<th>Формула</th>
+<th>Обозначения</th>
+</tr>
+<tr><td>Скорость при равномерном движении</td><td>v = s/t</td><td>s - путь, t - время</td></tr>
+<tr><td>Ускорение</td><td>a = (v - v0)/t</td><td>v0 - нач. скорость, v - кон. скорость</td></tr>
+<tr><td>Скорость при равноускоренном движении</td><td>v = v0 + at</td><td></td></tr>
+<tr><td>Перемещение при равноускоренном движении</td><td>s = v0t + at^2/2</td><td></td></tr>
+<tr><td>Перемещение без времени</td><td>s = (v^2 - v0^2)/(2a)</td><td></td></tr>
+<tr><td>Скорость при равномерном движении по окружности</td><td>v = 2πR/T</td><td>R - радиус, T - период</td></tr>
+<tr><td>Центростремительное ускорение</td><td>a = v^2/R</td><td></td></tr>
+<tr><td>Угловая скорость</td><td>ω = 2π/T = 2πν</td><td>ν - частота</td></tr>
 </table>
-<div id="res1" style="display:none; padding:10px; margin-top:10px; background:#f0f8ff;"></div>
-<div id="sol1" style="display:none; padding:10px; margin-top:10px; background:#fff3cd;">
-<b>Решение:</b> v = s/t = 50/10 = 5 м/с<br>
-<b>Ответ: 5</b>
-</div>
+
+<h3>Динамика</h3>
+<table width="100%" border="1" cellpadding="8">
+<tr bgcolor="#2c3e50" style="color:white">
+<th>Название</th>
+<th>Формула</th>
+<th>Обозначения</th>
+</tr>
+<tr><td>Второй закон Ньютона</td><td>F = ma</td><td>m - масса, a - ускорение</td></tr>
+<tr><td>Сила тяжести</td><td>Fтяж = mg</td><td>g = 9.8 м/с^2</td></tr>
+<tr><td>Сила упругости (закон Гука)</td><td>Fупр = -kx</td><td>k - жесткость, x - деформация</td></tr>
+<tr><td>Сила трения скольжения</td><td>Fтр = μN</td><td>μ - коэф. трения, N - сила реакции опоры</td></tr>
+<tr><td>Сила трения покоя</td><td>Fтр ≤ μN</td><td></td></tr>
+<tr><td>Закон всемирного тяготения</td><td>F = G·m1·m2/r^2</td><td>G = 6.67·10^-11 Н·м^2/кг^2</td></tr>
+<tr><td>Первая космическая скорость</td><td>v = √(GM/R)</td><td></td></tr>
+<tr><td>Вес тела при ускоренном движении</td><td>P = m(g ± a)</td><td></td></tr>
+</table>
+
+<h3>Законы сохранения</h3>
+<table width="100%" border="1" cellpadding="8">
+<tr bgcolor="#2c3e50" style="color:white">
+<th>Название</th>
+<th>Формула</th>
+<th>Обозначения</th>
+</tr>
+<tr><td>Импульс тела</td><td>p = mv</td><td></td></tr>
+<tr><td>Импульс силы</td><td>Ft = Δp</td><td></td></tr>
+<tr><td>Закон сохранения импульса</td><td>m1v1 + m2v2 = m1v1' + m2v2'</td><td></td></tr>
+<tr><td>Кинетическая энергия</td><td>Eк = mv^2/2</td><td></td></tr>
+<tr><td>Потенциальная энергия (поднятое тело)</td><td>Eп = mgh</td><td></td></tr>
+<tr><td>Потенциальная энергия (пружина)</td><td>Eп = kx^2/2</td><td></td></tr>
+<tr><td>Работа силы</td><td>A = F·s·cosα</td><td>α - угол между F и s</td></tr>
+<tr><td>Мощность</td><td>N = A/t = F·v</td><td></td></tr>
+<tr><td>КПД</td><td>η = Aполезн/Aзатрач · 100%</td><td></td></tr>
+</table>
+
+<h3>Статика и гидростатика</h3>
+<table width="100%" border="1" cellpadding="8">
+<tr bgcolor="#2c3e50" style="color:white">
+<th>Название</th>
+<th>Формула</th>
+<th>Обозначения</th>
+</tr>
+<tr><td>Момент силы</td><td>M = F·l</td><td>l - плечо силы</td></tr>
+<tr><td>Условие равновесия рычага</td><td>F1·l1 = F2·l2</td><td></td></tr>
+<tr><td>Давление</td><td>p = F/S</td><td></td></tr>
+<tr><td>Давление жидкости</td><td>p = ρgh</td><td>ρ - плотность, h - глубина</td></tr>
+<tr><td>Сила Архимеда</td><td>Fарх = ρж·g·Vт</td><td>Vт - объем погруженной части</td></tr>
+<tr><td>Условие плавания тел</td><td>Fарх = mg</td><td></td></tr>
+</table>
+</td></tr></table>
+<br>
+
+<!-- 2. МОЛЕКУЛЯРНАЯ ФИЗИКА -->
+<table width="100%" bgcolor="white" cellpadding="15" border="1" bordercolor="#1e3c5c">
+<tr><td>
+<a name="mol"></a>
+<center><h2>2. МОЛЕКУЛЯРНАЯ ФИЗИКА И ТЕРМОДИНАМИКА</h2></center>
+
+<h3>МКТ</h3>
+<table width="100%" border="1" cellpadding="8">
+<tr bgcolor="#2c3e50" style="color:white">
+<th>Название</th>
+<th>Формула</th>
+<th>Обозначения</th>
+</tr>
+<tr><td>Количество вещества</td><td>ν = m/M = N/Na</td><td>M - молярная масса, Na = 6·10^23</td></tr>
+<tr><td>Масса молекулы</td><td>m0 = M/Na</td><td></td></tr>
+<tr><td>Основное уравнение МКТ</td><td>p = (1/3)nm0v^2 = (2/3)nE</td><td>n - концентрация</td></tr>
+<tr><td>Связь давления со средней кинетической энергией</td><td>p = (2/3)nE</td><td></td></tr>
+</table>
+
+<h3>Уравнение состояния</h3>
+<table width="100%" border="1" cellpadding="8">
+<tr bgcolor="#2c3e50" style="color:white">
+<th>Название</th>
+<th>Формула</th>
+<th>Обозначения</th>
+</tr>
+<tr><td>Уравнение Менделеева-Клапейрона</td><td>pV = νRT</td><td>R = 8.31 Дж/(моль·К)</td></tr>
+<tr><td>Закон Бойля-Мариотта (T=const)</td><td>pV = const</td><td></td></tr>
+<tr><td>Закон Гей-Люссака (p=const)</td><td>V/T = const</td><td></td></tr>
+<tr><td>Закон Шарля (V=const)</td><td>p/T = const</td><td></td></tr>
+</table>
+
+<h3>Термодинамика</h3>
+<table width="100%" border="1" cellpadding="8">
+<tr bgcolor="#2c3e50" style="color:white">
+<th>Название</th>
+<th>Формула</th>
+<th>Обозначения</th>
+</tr>
+<tr><td>Внутренняя энергия идеального газа</td><td>U = (i/2)νRT</td><td>i - число степеней свободы</td></tr>
+<tr><td>Для одноатомного газа</td><td>U = (3/2)νRT</td><td>i=3</td></tr>
+<tr><td>Для двухатомного газа</td><td>U = (5/2)νRT</td><td>i=5</td></tr>
+<tr><td>Работа газа</td><td>A = pΔV</td><td>при изобарном процессе</td></tr>
+<tr><td>Первое начало термодинамики</td><td>Q = ΔU + A</td><td></td></tr>
+<tr><td>Количество теплоты при нагревании</td><td>Q = cmΔt</td><td>c - удельная теплоемкость</td></tr>
+<tr><td>Количество теплоты при плавлении</td><td>Q = λm</td><td>λ - удельная теплота плавления</td></tr>
+<tr><td>Количество теплоты при парообразовании</td><td>Q = Lm</td><td>L - удельная теплота парообразования</td></tr>
+<tr><td>Количество теплоты при сгорании</td><td>Q = qm</td><td>q - удельная теплота сгорания</td></tr>
+<tr><td>КПД теплового двигателя</td><td>η = (Qн - Qх)/Qн = A/Qн</td><td></td></tr>
+<tr><td>КПД цикла Карно</td><td>η = (Tн - Tх)/Tн</td><td></td></tr>
+</table>
+</td></tr></table>
+<br>
+
+<!-- 3. ЭЛЕКТРОДИНАМИКА -->
+<table width="100%" bgcolor="white" cellpadding="15" border="1" bordercolor="#1e3c5c">
+<tr><td>
+<a name="electro"></a>
+<center><h2>3. ЭЛЕКТРОДИНАМИКА</h2></center>
+
+<h3>Электростатика</h3>
+<table width="100%" border="1" cellpadding="8">
+<tr bgcolor="#2c3e50" style="color:white">
+<th>Название</th>
+<th>Формула</th>
+<th>Обозначения</th>
+</tr>
+<tr><td>Закон Кулона</td><td>F = k·|q1·q2|/r^2</td><td>k = 9·10^9 Н·м^2/Кл^2</td></tr>
+<tr><td>Напряженность электрического поля</td><td>E = F/q</td><td></td></tr>
+<tr><td>Напряженность поля точечного заряда</td><td>E = k·q/r^2</td><td></td></tr>
+<tr><td>Принцип суперпозиции полей</td><td>E = E1 + E2 + ...</td><td>векторно</td></tr>
+<tr><td>Потенциал электрического поля</td><td>φ = Wп/q</td><td></td></tr>
+<tr><td>Потенциал поля точечного заряда</td><td>φ = k·q/r</td><td></td></tr>
+<tr><td>Работа электрического поля</td><td>A = q(φ1 - φ2)</td><td></td></tr>
+<tr><td>Связь напряженности и напряжения</td><td>E = U/d</td><td>для однородного поля</td></tr>
+<tr><td>Электроемкость конденсатора</td><td>C = q/U</td><td></td></tr>
+<tr><td>Электроемкость плоского конденсатора</td><td>C = ε0·ε·S/d</td><td>ε0 = 8.85·10^-12 Ф/м</td></tr>
+<tr><td>Энергия заряженного конденсатора</td><td>W = qU/2 = CU^2/2 = q^2/(2C)</td><td></td></tr>
+</table>
+
+<h3>Постоянный ток</h3>
+<table width="100%" border="1" cellpadding="8">
+<tr bgcolor="#2c3e50" style="color:white">
+<th>Название</th>
+<th>Формула</th>
+<th>Обозначения</th>
+</tr>
+<tr><td>Сила тока</td><td>I = q/t</td><td></td></tr>
+<tr><td>Закон Ома для участка цепи</td><td>I = U/R</td><td></td></tr>
+<tr><td>Сопротивление проводника</td><td>R = ρ·l/S</td><td>ρ - удельное сопротивление</td></tr>
+<tr><td>Закон Ома для полной цепи</td><td>I = ε/(R + r)</td><td>ε - ЭДС, r - внутр. сопротивление</td></tr>
+<tr><td>Последовательное соединение</td><td>R = R1 + R2, I = const, U = U1+U2</td><td></td></tr>
+<tr><td>Параллельное соединение</td><td>1/R = 1/R1 + 1/R2, U = const, I = I1+I2</td><td></td></tr>
+<tr><td>Работа тока</td><td>A = IUt</td><td></td></tr>
+<tr><td>Мощность тока</td><td>P = IU = I^2R = U^2/R</td><td></td></tr>
+<tr><td>Закон Джоуля-Ленца</td><td>Q = I^2Rt</td><td></td></tr>
+</table>
+
+<h3>Магнетизм</h3>
+<table width="100%" border="1" cellpadding="8">
+<tr bgcolor="#2c3e50" style="color:white">
+<th>Название</th>
+<th>Формула</th>
+<th>Обозначения</th>
+</tr>
+<tr><td>Индукция магнитного поля</td><td>B = Fмакс/(I·l)</td><td></td></tr>
+<tr><td>Сила Ампера</td><td>F = B·I·l·sinα</td><td>α - угол между B и проводником</td></tr>
+<tr><td>Сила Лоренца</td><td>F = q·v·B·sinα</td><td></td></tr>
+<tr><td>Магнитный поток</td><td>Ф = B·S·cosα</td><td></td></tr>
+<tr><td>Закон электромагнитной индукции</td><td>ε = -ΔФ/Δt</td><td></td></tr>
+<tr><td>ЭДС индукции в движущемся проводнике</td><td>ε = B·l·v·sinα</td><td></td></tr>
+</table>
+
+<h3>Электромагнитные колебания</h3>
+<table width="100%" border="1" cellpadding="8">
+<tr bgcolor="#2c3e50" style="color:white">
+<th>Название</th>
+<th>Формула</th>
+<th>Обозначения</th>
+</tr>
+<tr><td>Период колебаний в контуре</td><td>T = 2π√(LC)</td><td>формула Томсона</td></tr>
+<tr><td>Частота колебаний</td><td>ν = 1/T</td><td></td></tr>
+<tr><td>Циклическая частота</td><td>ω = 2πν = 2π/T</td><td></td></tr>
+<tr><td>Емкостное сопротивление</td><td>Xc = 1/(ωC)</td><td></td></tr>
+<tr><td>Индуктивное сопротивление</td><td>XL = ωL</td><td></td></tr>
+</table>
+</td></tr></table>
+<br>
+
+<!-- 4. ОПТИКА -->
+<table width="100%" bgcolor="white" cellpadding="15" border="1" bordercolor="#1e3c5c">
+<tr><td>
+<a name="optics"></a>
+<center><h2>4. ОПТИКА</h2></center>
+
+<h3>Геометрическая оптика</h3>
+<table width="100%" border="1" cellpadding="8">
+<tr bgcolor="#2c3e50" style="color:white">
+<th>Название</th>
+<th>Формула</th>
+<th>Обозначения</th>
+</tr>
+<tr><td>Закон отражения</td><td>α = β</td><td>α - угол падения, β - угол отражения</td></tr>
+<tr><td>Закон преломления</td><td>sinα/sinβ = n21 = n2/n1</td><td></td></tr>
+<tr><td>Показатель преломления</td><td>n = c/v</td><td>c = 3·10^8 м/с</td></tr>
+<tr><td>Формула тонкой линзы</td><td>1/F = 1/d + 1/f</td><td>d - расст. до предмета, f - до изображения</td></tr>
+<tr><td>Оптическая сила линзы</td><td>D = 1/F (в метрах)</td><td>единица - диоптрия</td></tr>
+<tr><td>Увеличение линзы</td><td>Γ = f/d = H/h</td><td></td></tr>
+</table>
+
+<h3>Волновая оптика</h3>
+<table width="100%" border="1" cellpadding="8">
+<tr bgcolor="#2c3e50" style="color:white">
+<th>Название</th>
+<th>Формула</th>
+<th>Обозначения</th>
+</tr>
+<tr><td>Скорость света</td><td>c = λν</td><td>λ - длина волны, ν - частота</td></tr>
+<tr><td>Условие интерференционного максимума</td><td>Δd = kλ</td><td>k = 0,1,2...</td></tr>
+<tr><td>Условие интерференционного минимума</td><td>Δd = (2k+1)λ/2</td><td></td></tr>
+<tr><td>Условие дифракционного максимума</td><td>d·sinφ = kλ</td><td>d - период решетки</td></tr>
+<tr><td>Период дифракционной решетки</td><td>d = 1/N</td><td>N - число штрихов на 1 мм</td></tr>
+</table>
+</td></tr></table>
+<br>
+
+<!-- 5. КВАНТОВАЯ ФИЗИКА -->
+<table width="100%" bgcolor="white" cellpadding="15" border="1" bordercolor="#1e3c5c">
+<tr><td>
+<a name="quant"></a>
+<center><h2>5. КВАНТОВАЯ ФИЗИКА</h2></center>
+
+<h3>Фотоэффект</h3>
+<table width="100%" border="1" cellpadding="8">
+<tr bgcolor="#2c3e50" style="color:white">
+<th>Название</th>
+<th>Формула</th>
+<th>Обозначения</th>
+</tr>
+<tr><td>Энергия фотона</td><td>E = hν = hc/λ</td><td>h = 6.63·10^-34 Дж·с</td></tr>
+<tr><td>Уравнение Эйнштейна для фотоэффекта</td><td>hν = Aвых + mv^2/2</td><td></td></tr>
+<tr><td>Красная граница фотоэффекта</td><td>νmin = Aвых/h, λmax = hc/Aвых</td><td></td></tr>
+<tr><td>Импульс фотона</td><td>p = h/λ</td><td></td></tr>
+</table>
+
+<h3>Атомная физика</h3>
+<table width="100%" border="1" cellpadding="8">
+<tr bgcolor="#2c3e50" style="color:white">
+<th>Название</th>
+<th>Формула</th>
+<th>Обозначения</th>
+</tr>
+<tr><td>Энергия электрона на орбите</td><td>En = -13.6/n^2 эВ</td><td>n = 1,2,3...</td></tr>
+<tr><td>Постулаты Бора</td><td>hν = En - Em</td><td></td></tr>
+<tr><td>Радиус орбиты</td><td>rn = r1·n^2</td><td>r1 = 0.53·10^-10 м</td></tr>
+</table>
+
+<h3>Ядерная физика</h3>
+<table width="100%" border="1" cellpadding="8">
+<tr bgcolor="#2c3e50" style="color:white">
+<th>Название</th>
+<th>Формула</th>
+<th>Обозначения</th>
+</tr>
+<tr><td>Закон радиоактивного распада</td><td>N = N0·2^(-t/T)</td><td>T - период полураспада</td></tr>
+<tr><td>Энергия связи ядра</td><td>Eсв = Δm·c^2</td><td></td></tr>
+<tr><td>Дефект масс</td><td>Δm = (Z·mp + N·mn) - Mя</td><td></td></tr>
+<tr><td>Ядерные реакции</td><td>Сумма масс и зарядов сохраняется</td><td></td></tr>
+</table>
+</td></tr></table>
+<br>
+
+<!-- 6. КОНСТАНТЫ -->
+<table width="100%" bgcolor="white" cellpadding="15" border="1" bordercolor="#1e3c5c">
+<tr><td>
+<a name="const"></a>
+<center><h2>6. ФИЗИЧЕСКИЕ КОНСТАНТЫ</h2></center>
+
+<table width="100%" border="1" cellpadding="8">
+<tr bgcolor="#2c3e50" style="color:white">
+<th>Константа</th>
+<th>Обозначение</th>
+<th>Значение</th>
+</tr>
+<tr><td>Скорость света в вакууме</td><td>c</td><td>3·10^8 м/с</td></tr>
+<tr><td>Постоянная Планка</td><td>h</td><td>6.63·10^-34 Дж·с</td></tr>
+<tr><td>Постоянная Больцмана</td><td>k</td><td>1.38·10^-23 Дж/К</td></tr>
+<tr><td>Постоянная Авогадро</td><td>Na</td><td>6.02·10^23 моль^-1</td></tr>
+<tr><td>Газовая постоянная</td><td>R</td><td>8.31 Дж/(моль·К)</td></tr>
+<tr><td>Заряд электрона</td><td>e</td><td>1.6·10^-19 Кл</td></tr>
+<tr><td>Масса электрона</td><td>me</td><td>9.1·10^-31 кг</td></tr>
+<tr><td>Масса протона</td><td>mp</td><td>1.67·10^-27 кг</td></tr>
+<tr><td>Масса нейтрона</td><td>mn</td><td>1.67·10^-27 кг</td></tr>
+<tr><td>Гравитационная постоянная</td><td>G</td><td>6.67·10^-11 Н·м^2/кг^2</td></tr>
+<tr><td>Электрическая постоянная</td><td>ε0</td><td>8.85·10^-12 Ф/м</td></tr>
+<tr><td>Коэффициент k в законе Кулона</td><td>k = 1/(4πε0)</td><td>9·10^9 Н·м^2/Кл^2</td></tr>
+<tr><td>Ускорение свободного падения</td><td>g</td><td>9.8 м/с^2</td></tr>
+<tr><td>Атомная единица массы</td><td>а.е.м.</td><td>1.66·10^-27 кг</td></tr>
+</table>
+</td></tr></table>
+<br>
+
+<!-- 7. ПОЛЕЗНЫЕ ССЫЛКИ -->
+<table width="100%" bgcolor="white" cellpadding="15" border="1" bordercolor="#1e3c5c">
+<tr><td>
+<a name="links"></a>
+<center><h2>7. ПОЛЕЗНЫЕ ССЫЛКИ ДЛЯ ПОДГОТОВКИ</h2></center>
+
+<table width="100%" border="1" cellpadding="10">
+<tr bgcolor="#2c3e50" style="color:white">
+<th>Ресурс</th>
+<th>Ссылка</th>
+<th>Описание</th>
+</tr>
+
+<tr>
+<td><b>ФИПИ</b></td>
+<td><a href="http://fipi.ru" target="_blank">fipi.ru</a></td>
+<td>Официальный сайт ФИПИ - демоверсии, кодификаторы, спецификации</td>
+</tr>
+
+<tr>
+<td><b>РЕШУ ЕГЭ</b></td>
+<td><a href="https://ege.sdamgia.ru" target="_blank">ege.sdamgia.ru</a></td>
+<td>Тысячи заданий с решениями, каталог по темам</td>
+</tr>
+
+<tr>
+<td><b>РЕАЛЬНЫЕ ВАРИАНТЫ ЕГЭ</b></td>
+<td><a href="https://4ege.ru" target="_blank">4ege.ru</a></td>
+<td>Варианты прошлых лет с ответами</td>
+</tr>
+
+<tr>
+<td><b>ОТКРЫТЫЙ БАНК ЗАДАНИЙ</b></td>
+<td><a href="http://os.fipi.ru" target="_blank">os.fipi.ru</a></td>
+<td>Все задания ЕГЭ от разработчиков</td>
+</tr>
+
+<tr>
+<td><b>YOUTUBE - ФИЗИКА ЕГЭ</b></td>
+<td><a href="https://youtube.com" target="_blank">youtube.com</a></td>
+<td>Видеоуроки: "Физика ЕГЭ 100 баллов", "Физика с нуля"</td>
+</tr>
+
+<tr>
+<td><b>ЕГЭ.РФ</b></td>
+<td><a href="http://ege.edu.ru" target="_blank">ege.edu.ru</a></td>
+<td>Официальный портал ЕГЭ, расписание, результаты</td>
+</tr>
+
+<tr>
+<td><b>СТУДВОРК</b></td>
+<td><a href="https://studwork.ru" target="_blank">studwork.ru</a></td>
+<td>Справочник по физике, таблицы, формулы</td>
+</tr>
+
+<tr>
+<td><b>ТЕЛЕГРАМ-КАНАЛЫ</b></td>
+<td>@ege_phys</td>
+<td>Каналы с ежедневными заданиями и разборами</td>
+</tr>
+</table>
+
+<p><br></p>
+
+<h3>Что скачать для подготовки:</h3>
+<ul>
+<li><a href="#">Кодификатор ЕГЭ 2024 (PDF)</a></li>
+<li><a href="#">Спецификация ЕГЭ 2024 (PDF)</a></li>
+<li><a href="#">Демоверсия ЕГЭ 2024 с ответами</a></li>
+<li><a href="#">Справочные материалы на ЕГЭ</a></li>
+<li><a href="#">Таблица "Все формулы по физике"</a></li>
+<li><a href="#">Шпаргалки по разделам</a></li>
+</ul>
 </td></tr>
 </table>
 <br>
-
-<!-- ЗАДАНИЕ 2 - Механика (ускорение) -->
-<table width="100%" bgcolor="white" cellpadding="15" border="1" bordercolor="#1e3c5c">
-<tr><td>
-<b>ЗАДАНИЕ 2 (1 балл)</b>
-<p>Автомобиль разгоняется с места с ускорением 2 м/с². Какую скорость он наберет за 5 секунд? (Ответ в м/с)</p>
-<table><tr><td><input type="text" id="ans2" size="20" placeholder="Введите ответ..."></td>
-<td><button onclick="check2()">Проверить</button></td></tr></table>
-<div id="res2" style="display:none; padding:10px; margin-top:10px; background:#f0f8ff;"></div>
-<div id="sol2" style="display:none; padding:10px; margin-top:10px; background:#fff3cd;">
-<b>Решение:</b> v = v₀ + at = 0 + 2*5 = 10 м/с<br>
-<b>Ответ: 10</b>
-</div>
-</td></tr>
-</table>
-<br>
-
-<!-- ЗАДАНИЕ 3 - Динамика -->
-<table width="100%" bgcolor="white" cellpadding="15" border="1" bordercolor="#1e3c5c">
-<tr><td>
-<b>ЗАДАНИЕ 3 (1 балл)</b>
-<p>Тело массой 2 кг движется с ускорением 3 м/с². Чему равна равнодействующая сила? (Ответ в Н)</p>
-<table><tr><td><input type="text" id="ans3" size="20" placeholder="Введите ответ..."></td>
-<td><button onclick="check3()">Проверить</button></td></tr></table>
-<div id="res3" style="display:none; padding:10px; margin-top:10px; background:#f0f8ff;"></div>
-<div id="sol3" style="display:none; padding:10px; margin-top:10px; background:#fff3cd;">
-<b>Решение:</b> F = ma = 2 * 3 = 6 Н<br>
-<b>Ответ: 6</b>
-</div>
-</td></tr>
-</table>
-<br>
-
-<!-- ЗАДАНИЕ 4 - Закон сохранения -->
-<table width="100%" bgcolor="white" cellpadding="15" border="1" bordercolor="#1e3c5c">
-<tr><td>
-<b>ЗАДАНИЕ 4 (1 балл)</b>
-<p>Тело массой 2 кг движется со скоростью 5 м/с. Чему равен импульс тела? (Ответ в кг·м/с)</p>
-<table><tr><td><input type="text" id="ans4" size="20" placeholder="Введите ответ..."></td>
-<td><button onclick="check4()">Проверить</button></td></tr></table>
-<div id="res4" style="display:none; padding:10px; margin-top:10px; background:#f0f8ff;"></div>
-<div id="sol4" style="display:none; padding:10px; margin-top:10px; background:#fff3cd;">
-<b>Решение:</b> p = mv = 2 * 5 = 10 кг·м/с<br>
-<b>Ответ: 10</b>
-</div>
-</td></tr>
-</table>
-<br>
-
-<!-- ЗАДАНИЕ 5 - Работа и энергия -->
-<table width="100%" bgcolor="white" cellpadding="15" border="1" bordercolor="#1e3c5c">
-<tr><td>
-<b>ЗАДАНИЕ 5 (1 балл)</b>
-<p>Сила 10 Н совершила работу 50 Дж. Чему равно перемещение тела? (Ответ в м)</p>
-<table><tr><td><input type="text" id="ans5" size="20" placeholder="Введите ответ..."></td>
-<td><button onclick="check5()">Проверить</button></td></tr></table>
-<div id="res5" style="display:none; padding:10px; margin-top:10px; background:#f0f8ff;"></div>
-<div id="sol5" style="display:none; padding:10px; margin-top:10px; background:#fff3cd;">
-<b>Решение:</b> A = Fs → s = A/F = 50/10 = 5 м<br>
-<b>Ответ: 5</b>
-</div>
-</td></tr>
-</table>
-<br>
-
-<!-- ЗАДАНИЕ 6 - Статика -->
-<table width="100%" bgcolor="white" cellpadding="15" border="1" bordercolor="#1e3c5c">
-<tr><td>
-<b>ЗАДАНИЕ 6 (1 балл)</b>
-<p>Плечо силы 0.5 м, момент силы 10 Н·м. Чему равна сила? (Ответ в Н)</p>
-<table><tr><td><input type="text" id="ans6" size="20" placeholder="Введите ответ..."></td>
-<td><button onclick="check6()">Проверить</button></td></tr></table>
-<div id="res6" style="display:none; padding:10px; margin-top:10px; background:#f0f8ff;"></div>
-<div id="sol6" style="display:none; padding:10px; margin-top:10px; background:#fff3cd;">
-<b>Решение:</b> M = Fl → F = M/l = 10/0.5 = 20 Н<br>
-<b>Ответ: 20</b>
-</div>
-</td></tr>
-</table>
-<br>
-
-<!-- ЗАДАНИЕ 7 - Молекулярная физика -->
-<table width="100%" bgcolor="white" cellpadding="15" border="1" bordercolor="#1e3c5c">
-<tr><td>
-<b>ЗАДАНИЕ 7 (1 балл)</b>
-<p>В сосуде 2 моля газа. Сколько молекул? (Nа = 6·10²³, ответ в 10²³)</p>
-<table><tr><td><input type="text" id="ans7" size="20" placeholder="Введите ответ..."></td>
-<td><button onclick="check7()">Проверить</button></td></tr></table>
-<div id="res7" style="display:none; padding:10px; margin-top:10px; background:#f0f8ff;"></div>
-<div id="sol7" style="display:none; padding:10px; margin-top:10px; background:#fff3cd;">
-<b>Решение:</b> N = ν·Nа = 2·6·10²³ = 12·10²³<br>
-<b>Ответ: 12</b>
-</div>
-</td></tr>
-</table>
-<br>
-
-<!-- ЗАДАНИЕ 8 - Уравнение Менделеева-Клапейрона -->
-<table width="100%" bgcolor="white" cellpadding="15" border="1" bordercolor="#1e3c5c">
-<tr><td>
-<b>ЗАДАНИЕ 8 (1 балл)</b>
-<p>Давление газа 10⁵ Па, объем 2 м³, температура 300 К. Чему равно количество вещества? (R = 8.31, ответ округлить до целых)</p>
-<table><tr><td><input type="text" id="ans8" size="20" placeholder="Введите ответ..."></td>
-<td><button onclick="check8()">Проверить</button></td></tr></table>
-<div id="res8" style="display:none; padding:10px; margin-top:10px; background:#f0f8ff;"></div>
-<div id="sol8" style="display:none; padding:10px; margin-top:10px; background:#fff3cd;">
-<b>Решение:</b> PV = νRT → ν = PV/(RT) = (10⁵·2)/(8.31·300) = 200000/2493 ≈ 80 моль<br>
-<b>Ответ: 80</b>
-</div>
-</td></tr>
-</table>
-<br>
-
-<!-- ЗАДАНИЕ 9 - Термодинамика -->
-<table width="100%" bgcolor="white" cellpadding="15" border="1" bordercolor="#1e3c5c">
-<tr><td>
-<b>ЗАДАНИЕ 9 (1 балл)</b>
-<p>Газ получил 500 Дж тепла и совершил работу 200 Дж. Изменение внутренней энергии? (Ответ в Дж)</p>
-<table><tr><td><input type="text" id="ans9" size="20" placeholder="Введите ответ..."></td>
-<td><button onclick="check9()">Проверить</button></td></tr></table>
-<div id="res9" style="display:none; padding:10px; margin-top:10px; background:#f0f8ff;"></div>
-<div id="sol9" style="display:none; padding:10px; margin-top:10px; background:#fff3cd;">
-<b>Решение:</b> ΔU = Q - A = 500 - 200 = 300 Дж<br>
-<b>Ответ: 300</b>
-</div>
-</td></tr>
-</table>
-<br>
-
-<!-- ЗАДАНИЕ 10 - Электростатика -->
-<table width="100%" bgcolor="white" cellpadding="15" border="1" bordercolor="#1e3c5c">
-<tr><td>
-<b>ЗАДАНИЕ 10 (1 балл)</b>
-<p>Два заряда по 2·10⁻⁶ Кл на расстоянии 0.1 м. Чему равна сила Кулона? (k = 9·10⁹, ответ в 10⁻¹ Н)</p>
-<table><tr><td><input type="text" id="ans10" size="20" placeholder="Введите ответ..."></td>
-<td><button onclick="check10()">Проверить</button></td></tr></table>
-<div id="res10" style="display:none; padding:10px; margin-top:10px; background:#f0f8ff;"></div>
-<div id="sol10" style="display:none; padding:10px; margin-top:10px; background:#fff3cd;">
-<b>Решение:</b> F = k·|q₁q₂|/r² = 9·10⁹·(4·10⁻¹²)/0.01 = 36·10⁻³/0.01 = 3.6 Н = 36·10⁻¹ Н<br>
-<b>Ответ: 36</b>
-</div>
-</td></tr>
-</table>
-<br>
-
-<!-- ЗАДАНИЕ 11 - Напряженность -->
-<table width="100%" bgcolor="white" cellpadding="15" border="1" bordercolor="#1e3c5c">
-<tr><td>
-<b>ЗАДАНИЕ 11 (1 балл)</b>
-<p>На заряд 2·10⁻⁶ Кл действует сила 4·10⁻³ Н. Чему равна напряженность поля? (Ответ в 10³ Н/Кл)</p>
-<table><tr><td><input type="text" id="ans11" size="20" placeholder="Введите ответ..."></td>
-<td><button onclick="check11()">Проверить</button></td></tr></table>
-<div id="res11" style="display:none; padding:10px; margin-top:10px; background:#f0f8ff;"></div>
-<div id="sol11" style="display:none; padding:10px; margin-top:10px; background:#fff3cd;">
-<b>Решение:</b> E = F/q = 4·10⁻³/2·10⁻⁶ = 2·10³ Н/Кл<br>
-<b>Ответ: 2</b>
-</div>
-</td></tr>
-</table>
-<br>
-
-<!-- ЗАДАНИЕ 12 - Конденсаторы -->
-<table width="100%" bgcolor="white" cellpadding="15" border="1" bordercolor="#1e3c5c">
-<tr><td>
-<b>ЗАДАНИЕ 12 (1 балл)</b>
-<p>Конденсатор емкостью 10 мкФ заряжен до напряжения 100 В. Чему равен заряд? (Ответ в 10⁻³ Кл)</p>
-<table><tr><td><input type="text" id="ans12" size="20" placeholder="Введите ответ..."></td>
-<td><button onclick="check12()">Проверить</button></td></tr></table>
-<div id="res12" style="display:none; padding:10px; margin-top:10px; background:#f0f8ff;"></div>
-<div id="sol12" style="display:none; padding:10px; margin-top:10px; background:#fff3cd;">
-<b>Решение:</b> q = CU = 10·10⁻⁶·100 = 10⁻³ Кл<br>
-<b>Ответ: 1</b>
-</div>
-</td></tr>
-</table>
-<br>
-
-<!-- ЗАДАНИЕ 13 - Закон Ома -->
-<table width="100%" bgcolor="white" cellpadding="15" border="1" bordercolor="#1e3c5c">
-<tr><td>
-<b>ЗАДАНИЕ 13 (1 балл)</b>
-<p>Напряжение 20 В, сопротивление 10 Ом. Чему равна сила тока? (Ответ в А)</p>
-<table><tr><td><input type="text" id="ans13" size="20" placeholder="Введите ответ..."></td>
-<td><button onclick="check13()">Проверить</button></td></tr></table>
-<div id="res13" style="display:none; padding:10px; margin-top:10px; background:#f0f8ff;"></div>
-<div id="sol13" style="display:none; padding:10px; margin-top:10px; background:#fff3cd;">
-<b>Решение:</b> I = U/R = 20/10 = 2 А<br>
-<b>Ответ: 2</b>
-</div>
-</td></tr>
-</table>
-<br>
-
-<!-- ЗАДАНИЕ 14 - Мощность тока -->
-<table width="100%" bgcolor="white" cellpadding="15" border="1" bordercolor="#1e3c5c">
-<tr><td>
-<b>ЗАДАНИЕ 14 (1 балл)</b>
-<p>Сила тока 2 А, напряжение 10 В. Чему равна мощность тока? (Ответ в Вт)</p>
-<table><tr><td><input type="text" id="ans14" size="20" placeholder="Введите ответ..."></td>
-<td><button onclick="check14()">Проверить</button></td></tr></table>
-<div id="res14" style="display:none; padding:10px; margin-top:10px; background:#f0f8ff;"></div>
-<div id="sol14" style="display:none; padding:10px; margin-top:10px; background:#fff3cd;">
-<b>Решение:</b> P = UI = 10·2 = 20 Вт<br>
-<b>Ответ: 20</b>
-</div>
-</td></tr>
-</table>
-<br>
-
-<!-- ЗАДАНИЕ 15 - Магнетизм -->
-<table width="100%" bgcolor="white" cellpadding="15" border="1" bordercolor="#1e3c5c">
-<tr><td>
-<b>ЗАДАНИЕ 15 (1 балл)</b>
-<p>На проводник с током 2 А в магнитном поле действует сила 4 Н. Длина проводника 0.5 м. Чему равна магнитная индукция? (Ответ в Тл)</p>
-<table><tr><td><input type="text" id="ans15" size="20" placeholder="Введите ответ..."></td>
-<td><button onclick="check15()">Проверить</button></td></tr></table>
-<div id="res15" style="display:none; padding:10px; margin-top:10px; background:#f0f8ff;"></div>
-<div id="sol15" style="display:none; padding:10px; margin-top:10px; background:#fff3cd;">
-<b>Решение:</b> F = BIL → B = F/(IL) = 4/(2·0.5) = 4 Тл<br>
-<b>Ответ: 4</b>
-</div>
-</td></tr>
-</table>
-<br>
-
-<!-- ЗАДАНИЕ 16 - Сила Лоренца -->
-<table width="100%" bgcolor="white" cellpadding="15" border="1" bordercolor="#1e3c5c">
-<tr><td>
-<b>ЗАДАНИЕ 16 (1 балл)</b>
-<p>Заряд 1.6·10⁻¹⁹ Кл влетает в магнитное поле с индукцией 0.1 Тл со скоростью 10⁶ м/с под углом 90°. Чему равна сила Лоренца? (Ответ в 10⁻¹⁴ Н)</p>
-<table><tr><td><input type="text" id="ans16" size="20" placeholder="Введите ответ..."></td>
-<td><button onclick="check16()">Проверить</button></td></tr></table>
-<div id="res16" style="display:none; padding:10px; margin-top:10px; background:#f0f8ff;"></div>
-<div id="sol16" style="display:none; padding:10px; margin-top:10px; background:#fff3cd;">
-<b>Решение:</b> F = qvB = 1.6·10⁻¹⁹·10⁶·0.1 = 1.6·10⁻¹⁴ Н<br>
-<b>Ответ: 1.6</b>
-</div>
-</td></tr>
-</table>
-<br>
-
-<!-- ЗАДАНИЕ 17 - Оптика -->
-<table width="100%" bgcolor="white" cellpadding="15" border="1" bordercolor="#1e3c5c">
-<tr><td>
-<b>ЗАДАНИЕ 17 (1 балл)</b>
-<p>Частота света 5·10¹⁴ Гц. Чему равна энергия фотона? (h = 6.6·10⁻³⁴, ответ в 10⁻²⁰ Дж)</p>
-<table><tr><td><input type="text" id="ans17" size="20" placeholder="Введите ответ..."></td>
-<td><button onclick="check17()">Проверить</button></td></tr></table>
-<div id="res17" style="display:none; padding:10px; margin-top:10px; background:#f0f8ff;"></div>
-<div id="sol17" style="display:none; padding:10px; margin-top:10px; background:#fff3cd;">
-<b>Решение:</b> E = hν = 6.6·10⁻³⁴·5·10¹⁴ = 33·10⁻²⁰ Дж<br>
-<b>Ответ: 33</b>
-</div>
-</td></tr>
-</table>
-<br>
-
-<!-- ЗАДАНИЕ 18 - Фотоэффект -->
-<table width="100%" bgcolor="white" cellpadding="15" border="1" bordercolor="#1e3c5c">
-<tr><td>
-<b>ЗАДАНИЕ 18 (1 балл)</b>
-<p>Работа выхода 4·10⁻¹⁹ Дж, энергия фотона 6·10⁻¹⁹ Дж. Чему равна кинетическая энергия фотоэлектронов? (Ответ в 10⁻¹⁹ Дж)</p>
-<table><tr><td><input type="text" id="ans18" size="20" placeholder="Введите ответ..."></td>
-<td><button onclick="check18()">Проверить</button></td></tr></table>
-<div id="res18" style="display:none; padding:10px; margin-top:10px; background:#f0f8ff;"></div>
-<div id="sol18" style="display:none; padding:10px; margin-top:10px; background:#fff3cd;">
-<b>Решение:</b> Eк = E - Aвых = 6·10⁻¹⁹ - 4·10⁻¹⁹ = 2·10⁻¹⁹ Дж<br>
-<b>Ответ: 2</b>
-</div>
-</td></tr>
-</table>
-<br>
-
-<!-- ЗАДАНИЕ 19 - Атомная физика -->
-<table width="100%" bgcolor="white" cellpadding="15" border="1" bordercolor="#1e3c5c">
-<tr><td>
-<b>ЗАДАНИЕ 19 (1 балл)</b>
-<p>Энергия атома в основном состоянии -13.6 эВ. Чему равна энергия в возбужденном состоянии n=2? (Ответ в эВ)</p>
-<table><tr><td><input type="text" id="ans19" size="20" placeholder="Введите ответ..."></td>
-<td><button onclick="check19()">Проверить</button></td></tr></table>
-<div id="res19" style="display:none; padding:10px; margin-top:10px; background:#f0f8ff;"></div>
-<div id="sol19" style="display:none; padding:10px; margin-top:10px; background:#fff3cd;">
-<b>Решение:</b> E = -13.6/n² = -13.6/4 = -3.4 эВ<br>
-<b>Ответ: -3.4</b>
-</div>
-</td></tr>
-</table>
-<br>
-
-<!-- ЗАДАНИЕ 20 - Ядерная физика -->
-<table width="100%" bgcolor="white" cellpadding="15" border="1" bordercolor="#1e3c5c">
-<tr><td>
-<b>ЗАДАНИЕ 20 (1 балл)</b>
-<p>Период полураспада 10 дней. Сколько останется от 100 г через 30 дней? (Ответ в г)</p>
-<table><tr><td><input type="text" id="ans20" size="20" placeholder="Введите ответ..."></td>
-<td><button onclick="check20()">Проверить</button></td></tr></table>
-<div id="res20" style="display:none; padding:10px; margin-top:10px; background:#f0f8ff;"></div>
-<div id="sol20" style="display:none; padding:10px; margin-top:10px; background:#fff3cd;">
-<b>Решение:</b> N = N₀·2^(-t/T) = 100·2^(-3) = 100/8 = 12.5 г<br>
-<b>Ответ: 12.5</b>
-</div>
-</td></tr>
-</table>
-
-<hr>
-
-<!-- ЧАСТЬ 2 - 6 ЗАДАНИЙ -->
-<center><h2>ЧАСТЬ 2. РАЗВЕРНУТЫЕ РЕШЕНИЯ (ЗАДАНИЯ 21-26) - 52 БАЛЛА</h2></center>
-
-<!-- ЗАДАНИЕ 21 - Механика (8 баллов) -->
-<table width="100%" bgcolor="white" cellpadding="15" border="1" bordercolor="#1e3c5c">
-<tr><td>
-<b>ЗАДАНИЕ 21 (8 баллов)</b>
-<p><b>ДАНО:</b> Два груза массами 2 кг и 3 кг подвешены на нити, перекинутой через неподвижный блок. Трением пренебречь. g = 9.8 м/с²</p>
-<p>НАЙТИ ускорение грузов. (Ответ в м/с², округлить до десятых)</p>
-<table><tr><td><input type="text" id="ans21" size="20" placeholder="Введите ответ..."></td>
-<td><button onclick="check21()">Проверить</button></td></tr></table>
-<div id="res21" style="display:none; padding:10px; margin-top:10px; background:#f0f8ff;"></div>
-<div id="sol21" style="display:none; padding:10px; margin-top:10px; background:#fff3cd;">
-<b>Решение:</b> a = (m₂ - m₁)g / (m₁ + m₂) = (3-2)·9.8/(3+2) = 9.8/5 = 1.96 ≈ 2.0 м/с²<br>
-<b>Ответ: 2.0</b>
-</div>
-</td></tr>
-</table>
-<br>
-
-<!-- ЗАДАНИЕ 22 - Электричество (9 баллов) -->
-<table width="100%" bgcolor="white" cellpadding="15" border="1" bordercolor="#1e3c5c">
-<tr><td>
-<b>ЗАДАНИЕ 22 (9 баллов)</b>
-<p><b>ДАНО:</b> R₁ = 2 Ом, R₂ = 4 Ом, R₃ = 6 Ом. Резисторы R₁ и R₂ соединены параллельно, к ним последовательно подключен R₃. Напряжение на участке 12 В.</p>
-<p>НАЙТИ общее сопротивление участка. (Ответ в Ом, округлить до сотых)</p>
-<table><tr><td><input type="text" id="ans22" size="20" placeholder="Введите ответ..."></td>
-<td><button onclick="check22()">Проверить</button></td></tr></table>
-<div id="res22" style="display:none; padding:10px; margin-top:10px; background:#f0f8ff;"></div>
-<div id="sol22" style="display:none; padding:10px; margin-top:10px; background:#fff3cd;">
-<b>Решение:</b> 1/R₁₂ = 1/2 + 1/4 = 2/4 + 1/4 = 3/4 → R₁₂ = 4/3 ≈ 1.333 Ом<br>
-R = R₁₂ + R₃ = 1.333 + 6 = 7.333 ≈ 7.33 Ом<br>
-<b>Ответ: 7.33</b>
-</div>
-</td></tr>
-</table>
-<br>
-
-<!-- ЗАДАНИЕ 23 - Термодинамика (8 баллов) -->
-<table width="100%" bgcolor="white" cellpadding="15" border="1" bordercolor="#1e3c5c">
-<tr><td>
-<b>ЗАДАНИЕ 23 (8 баллов)</b>
-<p><b>ДАНО:</b> Водород массой 2 г находится при температуре 300 К. Молярная масса водорода M = 2 г/моль, R = 8.31 Дж/(моль·К). Водород - двухатомный газ.</p>
-<p>НАЙТИ внутреннюю энергию газа. (Ответ в Дж, округлить до целых)</p>
-<table><tr><td><input type="text" id="ans23" size="20" placeholder="Введите ответ..."></td>
-<td><button onclick="check23()">Проверить</button></td></tr></table>
-<div id="res23" style="display:none; padding:10px; margin-top:10px; background:#f0f8ff;"></div>
-<div id="sol23" style="display:none; padding:10px; margin-top:10px; background:#fff3cd;">
-<b>Решение:</b> ν = m/M = 2/2 = 1 моль<br>
-U = (5/2)νRT = 2.5·1·8.31·300 = 2.5·2493 = 6232.5 ≈ 6233 Дж<br>
-<b>Ответ: 6233</b>
-</div>
-</td></tr>
-</table>
-<br>
-
-<!-- ЗАДАНИЕ 24 - Квантовая физика (9 баллов) -->
-<table width="100%" bgcolor="white" cellpadding="15" border="1" bordercolor="#1e3c5c">
-<tr><td>
-<b>ЗАДАНИЕ 24 (9 баллов)</b>
-<p><b>ДАНО:</b> Работа выхода электрона из металла Aвых = 4·10⁻¹⁹ Дж. Частота падающего света ν = 8·10¹⁴ Гц. Постоянная Планка h = 6.6·10⁻³⁴ Дж·с.</p>
-<p>НАЙТИ максимальную кинетическую энергию фотоэлектронов. (Ответ в 10⁻¹⁹ Дж, округлить до десятых)</p>
-<table><tr><td><input type="text" id="ans24" size="20" placeholder="Введите ответ..."></td>
-<td><button onclick="check24()">Проверить</button></td></tr></table>
-<div id="res24" style="display:none; padding:10px; margin-top:10px; background:#f0f8ff;"></div>
-<div id="sol24" style="display:none; padding:10px; margin-top:10px; background:#fff3cd;">
-<b>Решение:</b> Eф = hν = 6.6·10⁻³⁴·8·10¹⁴ = 52.8·10⁻²⁰ = 5.28·10⁻¹⁹ Дж<br>
-Eк = Eф - Aвых = 5.28·10⁻¹⁹ - 4·10⁻¹⁹ = 1.28·10⁻¹⁹ ≈ 1.3·10⁻¹⁹ Дж<br>
-<b>Ответ: 1.3</b>
-</div>
-</td></tr>
-</table>
-<br>
-
-<!-- ЗАДАНИЕ 25 - Механика (закон сохранения энергии) (9 баллов) -->
-<table width="100%" bgcolor="white" cellpadding="15" border="1" bordercolor="#1e3c5c">
-<tr><td>
-<b>ЗАДАНИЕ 25 (9 баллов)</b>
-<p><b>ДАНО:</b> Тело массой 2 кг падает с высоты 20 м без начальной скорости. Сопротивлением воздуха пренебречь. g = 10 м/с².</p>
-<p>НАЙТИ кинетическую энергию тела перед ударом о землю. (Ответ в Дж)</p>
-<table><tr><td><input type="text" id="ans25" size="20" placeholder="Введите ответ..."></td>
-<td><button onclick="check25()">Проверить</button></td></tr></table>
-<div id="res25" style="display:none; padding:10px; margin-top:10px; background:#f0f8ff;"></div>
-<div id="sol25" style="display:none; padding:10px; margin-top:10px; background:#fff3cd;">
-<b>Решение:</b> По закону сохранения энергии: mgh = mv²/2 = Eк<br>
-Eк = mgh = 2·10·20 = 400 Дж<br>
-<b>Ответ: 400</b>
-</div>
-</td></tr>
-</table>
-<br>
-
-<!-- ЗАДАНИЕ 26 - Колебания и волны (9 баллов) -->
-<table width="100%" bgcolor="white" cellpadding="15" border="1" bordercolor="#1e3c5c">
-<tr><td>
-<b>ЗАДАНИЕ 26 (9 баллов)</b>
-<p><b>ДАНО:</b> Колебательный контур состоит из катушки индуктивностью L = 0.1 Гн и конденсатора емкостью C = 10 мкФ.</p>
-<p>НАЙТИ период свободных электромагнитных колебаний. (Ответ в миллисекундах, округлить до сотых, π = 3.14)</p>
-<table><tr><td><input type="text" id="ans26" size="20" placeholder="Введите ответ..."></td>
-<td><button onclick="check26()">Проверить</button></td></tr></table>
-<div id="res26" style="display:none; padding:10px; margin-top:10px; background:#f0f8ff;"></div>
-<div id="sol26" style="display:none; padding:10px; margin-top:10px; background:#fff3cd;">
-<b>Решение:</b> T = 2π√(LC) = 2·3.14·√(0.1·10·10⁻⁶) = 6.28·√(10⁻⁶) = 6.28·0.001 = 0.00628 с = 6.28 мс<br>
-<b>Ответ: 6.28</b>
-</div>
-</td></tr>
-</table>
-
-<hr>
 
 <!-- КНОПКИ -->
 <center>
 <table cellpadding="10">
 <tr>
-<td><button onclick="resetAll()" style="padding:10px 20px; background:#ffd966">НАЧАТЬ ЗАНОВО</button></td>
-<td><button onclick="showAll()" style="padding:10px 20px; background:#3498db; color:white">ПОКАЗАТЬ ВСЕ РЕШЕНИЯ</button></td>
 <td><a href="index.html" style="padding:10px 20px; background:#2c3e50; color:white; text-decoration:none">НА ГЛАВНУЮ</a></td>
+<td><a href="ege2024.html" style="padding:10px 20px; background:#3498db; color:white; text-decoration:none">ПЕРЕЙТИ К ТЕСТАМ</a></td>
 </tr>
 </table>
 </center>
 
 <br>
 
+<hr>
+<center>
+<font color="#1e3c5c" size="2">
+<b>Все формулы для ЕГЭ по физике | 2024 год</b><br>
+Сделано специально для подготовки к экзамену
+</font>
+</center>
+
 </td></tr>
 </table>
 </center>
-
-<script>
-// ПЕРЕМЕННАЯ ДЛЯ ПОДСЧЕТА БАЛЛОВ
-var total = 0;
-
-// ФУНКЦИИ ПРОВЕРКИ ДЛЯ ЗАДАНИЙ 1-20
-function check1() { check(1, 5, 1); }
-function check2() { check(2, 10, 1); }
-function check3() { check(3, 6, 1); }
-function check4() { check(4, 10, 1); }
-function check5() { check(5, 5, 1); }
-function check6() { check(6, 20, 1); }
-function check7() { check(7, 12, 1); }
-function check8() { check(8, 80, 1); }
-function check9() { check(9, 300, 1); }
-function check10() { check(10, 36, 1); }
-function check11() { check(11, 2, 1); }
-function check12() { check(12, 1, 1); }
-function check13() { check(13, 2, 1); }
-function check14() { check(14, 20, 1); }
-function check15() { check(15, 4, 1); }
-function check16() { check(16, 1.6, 1); }
-function check17() { check(17, 33, 1); }
-function check18() { check(18, 2, 1); }
-function check19() { check(19, -3.4, 1); }
-function check20() { check(20, 12.5, 1); }
-
-// ФУНКЦИИ ПРОВЕРКИ ДЛЯ ЗАДАНИЙ 21-26
-function check21() { check(21, 2.0, 8); }
-function check22() { check(22, 7.33, 9); }
-function check23() { check(23, 6233, 8); }
-function check24() { check(24, 1.3, 9); }
-function check25() { check(25, 400, 9); }
-function check26() { check(26, 6.28, 9); }
-
-// ОБЩАЯ ФУНКЦИЯ ПРОВЕРКИ
-function check(num, correct, points) {
-    var ans = parseFloat(document.getElementById('ans' + num).value);
-    var res = document.getElementById('res' + num);
-    var sol = document.getElementById('sol' + num);
-    
-    if (isNaN(ans)) {
-        alert('Введите ответ!');
-        return;
-    }
-    
-    var tolerance = 0.01;
-    if (num == 23) tolerance = 1; // Для больших чисел
-    
-    if (Math.abs(ans - correct) < tolerance) {
-        res.innerHTML = 'ПРАВИЛЬНО! +' + points + ' балл(а)';
-        res.style.background = '#d4edda';
-        res.style.display = 'block';
-        sol.style.display = 'none';
-        total = total + points;
-    } else {
-        res.innerHTML = 'НЕПРАВИЛЬНО. Правильный ответ: ' + correct;
-        res.style.background = '#f8d7da';
-        res.style.display = 'block';
-        sol.style.display = 'block';
-    }
-    
-    document.getElementById('totalScore').innerHTML = 'ИТОГО: ' + total + ' / 100 баллов';
-}
-
-// СБРОС ВСЕХ ЗАДАНИЙ
-function resetAll() {
-    total = 0;
-    document.getElementById('totalScore').innerHTML = 'ИТОГО: 0 / 100 баллов';
-    
-    for (var i = 1; i <= 26; i++) {
-        var res = document.getElementById('res' + i);
-        var sol = document.getElementById('sol' + i);
-        var inp = document.getElementById('ans' + i);
-        if (res) { res.style.display = 'none'; }
-        if (sol) { sol.style.display = 'none'; }
-        if (inp) { inp.value = ''; }
-    }
-}
-
-// ПОКАЗАТЬ ВСЕ РЕШЕНИЯ
-function showAll() {
-    for (var i = 1; i <= 26; i++) {
-        var sol = document.getElementById('sol' + i);
-        if (sol) { sol.style.display = 'block'; }
-    }
-}
-</script>
 
 </body>
 </html>
